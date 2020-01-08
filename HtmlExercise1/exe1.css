@@ -1,0 +1,21 @@
+.title{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.left{
+  float: left;
+  width: 18%;
+  padding: 20px;
+  margin-left: 220px;
+  border: 3px outset rgb(233, 231, 231);
+  font-weight: lighter;
+}
+.right{
+  float: right;
+  width: 40%;
+  padding-top: 0px;
+  margin-right: 220px;
+}
+.design{
+  color: rgb(36, 106, 211);
+}
