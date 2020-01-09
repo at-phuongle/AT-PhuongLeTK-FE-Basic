@@ -1,6 +1,4 @@
-//câu 1
-
-var num1, num2;
+// câu 1
 function sum1(num1, num2) {
   if (num1 === num2) {
     return (num1 + num2) * 3;
@@ -10,8 +8,7 @@ function sum1(num1, num2) {
 }
 console.log("result of exercise1: " + sum1(2,2));
 
-//câu 2
-var soNhapVao;
+// câu 2
 function Subtraction(soNhapVao) {
   if (soNhapVao <= 19) {
     return (19 - soNhapVao);
@@ -21,9 +18,8 @@ function Subtraction(soNhapVao) {
 }
 console.log("result of exercise2: " + Subtraction(9));
 
-//câu 3
-var string = '';
-var number = [];
+// câu 3
+// var number = [];
 var sum = 0;
 function Div3(string) {
   var arrDiv3 = [];
@@ -43,7 +39,7 @@ function Div3(string) {
 }
 console.log("result of exercise3: " + Div3('1234567890*'));
 
-//câu 4
+// câu 4
 var arrDiv6 = [];
 function Div6(string2) {
   var abc = Div3(string2);
