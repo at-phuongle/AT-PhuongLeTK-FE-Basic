@@ -25,7 +25,6 @@ console.log("kq cau 2 la: " + tinhHieu(9));
 var string = '';
 var number = [];
 var sum = 0;
-
 function soChiaHetCho3(string) {
   var arrDiv3 = [];
   number = string.split('');
