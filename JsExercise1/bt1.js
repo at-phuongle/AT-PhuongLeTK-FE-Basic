@@ -30,10 +30,10 @@ function soChiaHetCho3(string) {
   var arrDiv3 = [];
   number = string.split('');
   number.splice(string.indexOf('*'), 1);
-  for(let i = 0; i < number.length; i++) {
+  for(var i = 0; i < number.length; i++) {
     sum += parseInt(number[i]);
   }
-  for(let a = 0; a < 10; a++) {
+  for(var a = 0; a < 10; a++) {
     var t = sum;
     t += a;
     if (t % 3 === 0) {
@@ -48,7 +48,7 @@ console.log("kq cau 3 la: " + soChiaHetCho3('1*9'));
 var arrDiv6 = [];
 function soChiaHetCho6(string) {
   var abc = soChiaHetCho3(string);
-  for(let f = 0; f < abc.length; f++) {
+  for(var f = 0; f < abc.length; f++) {
     if (abc[f] % 2 === 0) {
       arrDiv6.push(abc[f]);
     }
