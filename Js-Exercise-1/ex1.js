@@ -6,7 +6,7 @@ function sum1(num1, num2) {
     return (num1 + num2);
   }
 }
-console.log("result of exercise1: " + sum1(2,2));
+console.log('result of exercise1: ' + sum1(2, 2));
 
 // câu 2
 function Subtraction(soNhapVao) {
@@ -16,7 +16,7 @@ function Subtraction(soNhapVao) {
     return (soNhapVao - 19) * 3;
   }
 }
-console.log("result of exercise2: " + Subtraction(9));
+console.log('result of exercise2: ' + Subtraction(9));
 
 // câu 3
 // var number = [];
@@ -37,7 +37,7 @@ function Div3(string) {
   }
   return arrDiv3;
 }
-console.log("result of exercise3: " + Div3('1234567890*'));
+console.log('result of exercise3: ' + Div3('1234567890*'));
 
 // câu 4
 var arrDiv6 = [];
@@ -50,4 +50,4 @@ function Div6(string2) {
   }
   return arrDiv6;
 }
-console.log("result of exercise4: " + Div6('1234567890*'));
+console.log('result of exercise4: ' + Div6('1234567890*'));
