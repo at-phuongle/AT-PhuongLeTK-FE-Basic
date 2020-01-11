@@ -11,8 +11,8 @@
 
 <body>
   <header class="page-header">
-    <section class="container page-header__content ">
-      <img class="page-header__logo" src="./images/logo.jpg" alt="">
+    <section class="container page-header__top">
+      <a><img class="page-header__logo" src="./images/logo.jpg" alt=""></a>
       <div class="page-header__name">
         <span class="page-header__title">Specialized clinic</span>
         <span class="page-header__description">Physiotherapy - Rehabilitation</span>
@@ -23,8 +23,8 @@
         <span class="page-header__help-number">05113941 977</span>
       </div>
     </section>
-    <div class="container-fluid page-nav-fluid">
-      <nav class="page-nav container">
+    <nav class="page-nav">
+      <div class="container container--nav">
         <ul class="page-navbar__list">
           <li class="page-navbar__item page-navbar__item--first">
             <a class="page-navbar__link" href="index.html">Home</a>
@@ -56,158 +56,167 @@
             <a class="page-navbar__link" href=""><img src="./images/iconYoutube.jpg" alt=""></a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
-    <section class="page-main__banner">
+    <section class="section__banner">
       <div class="container">
-        <ul class="navbar-breadcrumb">
-          <li class="navbar-breadcrumb__item">
-            <a class="navbar-breadcrumb__link" href="index.html">Home</a>
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="index.html">Home</a>
           </li>
-          <li class="navbar-breadcrumb__item">
-            <a class="navbar-breadcrumb__link" href="">Health servers</a>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="">Health servers</a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="container page-main__content">
-      <aside class="page-main__schedule">
-        <div class="page-main__schedule-detail">
-          <div class="page-main__schedule-list">
-            <div class="page-main__schedule-title">
-              <span class="page-main__schedule-name">Adults</span>
-              <span class="page-main__schedule-icon">&#45;</span>
+    <section class="page-main__content">
+      <div class="container layout-2col__left">
+        <aside class="layout-2col__sidebar">
+          <div class="block block-categorise">
+            <div class="block__content">
+              <ul class="block__list">
+                <li class="block__item">
+                  <h5 class="block__item-title">Adults</h5>
+                  <ul class="block__item-list">
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Neck-shoulder-hand pain</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Spinal pain</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Disc hermination</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Knee joiny, hip joint</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Footsore,</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Diseases of the muscles</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Peripheral neuropathy</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Sequelae of stroke</a>
+                    </li>
+                    <li class="block__item-detail">
+                      <a href="" class="block__item-link">Traumatic sequelae</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="block__item">
+                  <h5 class="block__item-title">Chilren</h5 class="block__item">
+                </li>
+              </ul>
             </div>
-            <ul class="page-main__schedule-container">
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Neck-shoulder-hand
-                  pain</a></li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Spinal pain</a></li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Disc hermination</a>
-              </li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Knee joiny, hip
-                  joint</a></li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Footsore,</a>
-              </li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Diseases of the
-                  muscles</a>
-              </li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Peripheral
-                  neuropathy</a>
-              </li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Sequelae of stroke</a>
-              </li>
-              <li class="page-main__schedule-item"><a class="page-main__schedule-link" href="#">Traumatic sequelae</a>
-              </li>
-            </ul>
           </div>
-        </div>
-        <div class="page-main__schedule-list">
-          <div class="page-main__schedule-title">
-            <span class="page-main__schedule-name">Chilren</span>
-            <span class="page-main__schedule-icon">&#43;</span>
-          </div>
-        </div>
-        </div>
-        </div>
-        <div class="page-main__schedule-book">
-          <h3 class="page-main__schedule-book-title">BOOK SCHEDULE</h3>
-          <form class="page-main__schedule-book-content">
-            <input class="page-main__input-book-info" type="text" placeholder="Full Name">
-            <input class="page-main__input-book-info" type="text" placeholder="Address">
-            <input class="page-main__input-book-info" type="text" placeholder="Phone number">
-            <div class="page-main__input-book-info--time">
-              <input class="page-main__input-book-info page-main__input-book-info--time" type="text" placeholder="Time">
-              <img class="page-main__input-book-info-img" src="/images/time.png">
+          <div class="block block-booking">
+            <h2 class="block__book-title">Book schedule</h2>
+            <div class="block__content">
+              <form action="">
+                <input class="page-main__input-book-info" type="text" placeholder="Full Name">
+                <input class="page-main__input-book-info" type="text" placeholder="Address">
+                <input class="page-main__input-book-info" type="text" placeholder="Phone number">
+                <div class="page-main__input-book-info--time">
+                  <input class="page-main__input-book-info page-main__input-book-info--time" type="text"
+                    placeholder="Time">
+                  <img class="page-main__input-book-info-img" src="./images/time.png">
+                </div>
+                <input class="page-main__btn-submit-book-info" type="submit" value="SEND">
+              </form>
             </div>
-            <input class="page-main__btn-submit-book-info" type="submit" value="SEND">
-          </form>
-        </div>
-      </aside>
-      <section class="list-item page-main__sick">
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-1.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-2.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+        </aside>
+        <section class="list-item page-main__sick">
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-1.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-3.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-2.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-4.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-3.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-5.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-4.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-6.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna.</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-5.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-7.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Slow say</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-6.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna.</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-8.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-7.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Slow say</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-        <div class="page-main__sick-item">
-          <img class="page-main__sick-img" src="./images/image-9.jpg">
-          <div class="page-main__sick-detail">
-            <h3 class="page-main__sick-title">Neck shoulder pain</h3>
-            <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-8.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
           </div>
-          <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
-        </div>
-      </section>
+          <div class="page-main__sick-item">
+            <img class="page-main__sick-img" src="./images/image-9.jpg">
+            <div class="page-main__sick-detail">
+              <h3 class="page-main__sick-title">Neck shoulder pain</h3>
+              <p class="page-main__sick-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <a class="page-main__sick-link"><img class="page-main__sick-link-icon" src="./images/iconNext.jpg"></a>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -232,9 +241,12 @@
         <div class="page-footer_item">
           <span class="page-footer__item-name">Social connection</span>
           <ul class="page-footer__item-list-icon">
-            <li class="page-footer__item-icon"><img src="./images/iconFB.png"><a class="page-footer__item-link">Facebook</a></li>
-            <li class="page-footer__item-icon"><img src="./images/iconGG.png"><a class="page-footer__item-link">Google</a></li>
-            <li class="page-footer__item-icon"><img src="./images/iconYB.png"><a class="page-footer__item-link">Youtube</a></li>
+            <li class="page-footer__item-icon"><img src="./images/iconFB.png"><a
+                class="page-footer__item-link">Facebook</a></li>
+            <li class="page-footer__item-icon"><img src="./images/iconGG.png"><a
+                class="page-footer__item-link">Google</a></li>
+            <li class="page-footer__item-icon"><img src="./images/iconYB.png"><a
+                class="page-footer__item-link">Youtube</a></li>
           </ul>
         </div>
       </div>
