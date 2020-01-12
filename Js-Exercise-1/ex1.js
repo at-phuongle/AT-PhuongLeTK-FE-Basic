@@ -9,11 +9,11 @@ function sum1(num1, num2) {
 console.log('result of exercise1: ' + sum1(2, 2));
 
 // câu 2
-function Subtraction(soNhapVao) {
-  if (soNhapVao <= 19) {
-    return (19 - soNhapVao);
+function Subtraction(number) {
+  if (number <= 19) {
+    return (19 - number);
   } else {
-    return (soNhapVao - 19) * 3;
+    return (number - 19) * 3;
   }
 }
 console.log('result of exercise2: ' + Subtraction(9));
