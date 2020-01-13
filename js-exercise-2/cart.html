@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <section class="container page-header__top">
+      <a><img class="page-header__logo" src="./images/logo.jpg" alt=""></a>
+      <div class="page-header__name">
+        <span class="page-header__title">Perfume</span>
+        <span class="page-header__description">Your perfume is your message</span>
+      </div>
+      <div class="page-header__contact">
+        <img src="./images/iconCall.jpg" alt="">
+        <span class="page-header__help"> Question for the doctor? </span>
+        <span class="page-header__help-number">05113941 977</span>
+      </div>
+      <div class="page-header__cart">
+        <!-- <button type="submit"><i class="fa fa-shopping-cart"></i></button> -->
+      </div>
+    </section>
+    <nav class="page-nav">
+      <div class="container container--nav">
+        <ul class="page-navbar__list">
+          <li class="page-navbar__item page-navbar__item--first">
+            <a class="page-navbar__link" href="#">Home</a>
+          </li>
+          <li class="page-navbar__item">
+            <a class="page-navbar__link" href="#">About us</a>
+          </li>
+          <li class="page-navbar__item">
+            <a class="page-navbar__link page-navbar__link--active" href="listproduct.html">List product</a>
+          </li>
+          <li class="page-navbar__item">
+            <a class="page-navbar__link" href="#">Sale</a>
+          </li>
+          <li class="page-navbar__item">
+            <a class="page-navbar__link" href="#">Blog review</a>
+          </li>
+          <li class="page-navbar__item">
+            <a class="page-navbar__link" href="#">Consult & contact</a>
+          </li>
+        </ul>
+        <ul class="page-navbar__icon">
+          <li class="page-navbar__item--icon">
+            <a class="page-navbar__link" href="#"><img src="./images/iconFacebook.jpg" alt=""></a>
+          </li>
+          <li class="page-navbar__item--icon">
+            <a class="page-navbar__link" href="#"><img src="./images/iconGoogle.jpg" alt=""></a>
+          </li>
+          <li class="page-navbar__item--icon">
+            <a class="page-navbar__link" href="#"><img src="./images/iconYoutube.jpg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="section__banner">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="./listproduct.html">List Product</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="./cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__content">
+      <div class="container section-cart-list">
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+          <tbody id="bodyTable">
+            <!-- <tr>
+            <td>1</td>
+            <td>Image, Name</td>
+            <td>1</td>
+            <td>$20</td>
+            <td>X</td>
+            <td>$20</td>
+          </tr> -->
+          </tbody>
+
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="container-fluid page-footer-fluid">
+      <div class="container page-footer__content">
+        <div class="page-footer__item">
+          <span class="page-footer__item-name">About us</span>
+          <ul class="page-footer__item-list">
+            <li class="page-footer__item-detail"><a>General introduction</li class="page-footer__item-detail"></a></li>
+            <li class="page-footer__item-detail"><a>Human</a></li class="page-footer__item-detail">
+            <li class="page-footer__item-detail"><a>Facuties and facelities</a></li class="page-footer__item-detail">
+          </ul>
+        </div>
+        <div class="page-footer__item">
+          <span class="page-footer__item-name">Support</span>
+          <ul class="page-footer__item-list">
+            <li class="page-footer__item-detail"><a>General introduction</li></a></li>
+            <li class="page-footer__item-detail"><a>Juman</a></li class="page-footer__item-detail">
+            <li class="page-footer__item-detail"><a>Facuties and facelities</a></li class="page-footer__item-detail">
+          </ul>
+        </div>
+        <div class="page-footer_item">
+          <span class="page-footer__item-name">Social connection</span>
+          <ul class="page-footer__item-list-icon">
+            <li class="page-footer__item-icon"><img src="./images/iconFB.png"><a
+                class="page-footer__item-link">Facebook</a></li>
+            <li class="page-footer__item-icon"><img src="./images/iconGG.png"><a
+                class="page-footer__item-link">Google</a></li>
+            <li class="page-footer__item-icon"><img src="./images/iconYB.png"><a
+                class="page-footer__item-link">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container page-footer__coppy-right">
+      <span class="page-footer__coppy-right-text"> 2018 - Copyright of Specialized Clinic</span>
+      <span class="page-footer__author">Design by <span class="page-footer__author-name"> dd.com</span></span>
+    </section>
+  </footer>
+
+  <script src="./cart.js"></script>
+  <!-- <script type="text/javascript">
+
+  </script> -->
+</body>
+
+</html>
