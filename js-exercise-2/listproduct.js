@@ -68,10 +68,14 @@ var add_cart = [
     // price: "158.99"
   }
 ];
-add_cart = JSON.parse(localStorage.getItem('add-cart'));
-document.getElementById("count").innerHTML = add_cart.length;
+if (localStorage.getItem('add-cart') === null) {
+  localStorage.setItem('add-cart', JSON.stringify(add_cart));
+} else {
+  add_cart = JSON.parse(localStorage.getItem('add-cart'));
+  document.getElementById("count").innerHTML = add_cart.length;
+}
+var box = document.getElementById('content-detail');
 for (var i = 0; i < getObject.length; i++) {
-  var box = document.getElementById('content-detail');
   box.innerHTML +=
     "<div class='page-main__product-item'>" +
     "<img class='page-main__product-img' src='./images/" + getObject[i].image + "'>" +
