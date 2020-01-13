@@ -9,19 +9,19 @@ function sum1(num1, num2) {
 console.log('result of exercise1: ' + sum1(2, 2));
 
 // câu 2
-function Subtraction(number) {
+function subtraction(number) {
   if (number <= 19) {
     return (19 - number);
   } else {
     return (number - 19) * 3;
   }
 }
-console.log('result of exercise2: ' + Subtraction(9));
+console.log('result of exercise2: ' + subtraction(9));
 
 // câu 3
 // var number = [];
 var sum = 0;
-function Div3(string) {
+function div3(string) {
   var arrDiv3 = [];
   number = string.split('');
   number.splice(string.indexOf('*'), 1);
@@ -37,12 +37,12 @@ function Div3(string) {
   }
   return arrDiv3;
 }
-console.log('result of exercise3: ' + Div3('1234567890*'));
+console.log('result of exercise3: ' + div3('1234567890*'));
 
 // câu 4
 var arrDiv6 = [];
-function Div6(string2) {
-  var abc = Div3(string2);
+function div6(string2) {
+  var abc = div3(string2);
   for (var f = 0; f < abc.length; f++) {
     if (abc[f] % 2 === 0) {
       arrDiv6.push(abc[f]);
@@ -50,4 +50,4 @@ function Div6(string2) {
   }
   return arrDiv6;
 }
-console.log('result of exercise4: ' + Div6('1234567890*'));
+console.log('result of exercise4: ' + div6('1234567890*'));
