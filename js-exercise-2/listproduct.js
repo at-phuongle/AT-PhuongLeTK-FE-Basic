@@ -61,19 +61,15 @@ localStorage.setItem('product', JSON.stringify(product));
 var getObject = JSON.parse(localStorage.getItem('product'));
 var add_cart = [
   {
-    id: 2,
-    image: "anh2.jpg",
-    name: "Miss Dior / Christian Dior EDP Spray 5.0 oz (w)",
-    description: "Launch year: 2012. Top notes: Mandarin. Heart notes: Bulgarian rose, Turkish rose. Base notes: Patchouli, Amber, Vanilla. Design house: Christian Dior.",
-    price: "158.99"
+    // id: 2,
+    // image: "anh2.jpg",
+    // name: "Miss Dior / Christian Dior EDP Spray 5.0 oz (w)",
+    // description: "Launch year: 2012. Top notes: Mandarin. Heart notes: Bulgarian rose, Turkish rose. Base notes: Patchouli, Amber, Vanilla. Design house: Christian Dior.",
+    // price: "158.99"
   }
 ];
-if (localStorage.getItem('add-cart') === null) {
-  localStorage.setItem('add-cart', JSON.stringify(add_cart));
-} else {
-  add_cart = JSON.parse(localStorage.getItem('add-cart'));
-  document.getElementById("count").innerHTML = add_cart.length;
-}
+add_cart = JSON.parse(localStorage.getItem('add-cart'));
+document.getElementById("count").innerHTML = add_cart.length;
 for (var i = 0; i < getObject.length; i++) {
   var box = document.getElementById('content-detail');
   box.innerHTML +=
