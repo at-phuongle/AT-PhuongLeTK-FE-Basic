@@ -39,17 +39,19 @@ for (var i = 0; i < product.length; i++) {
 
   $temButton = document.createElement('button');
   $temButton.setAttribute('class', 'btn-add');
-  $temButton.setAttribute('id', product[i].id);
-  $temButton.onclick = function () { functionAdd(this.id) }
+  $temButton.setAttribute('data-id', product[i].id);
+  // $temButton.onclick = function () { functionAdd(this.id) }
+  $temButton.addEventListener('click', functionAdd, false);
   $temContent = document.createTextNode('Add to cart');
   $temButton.appendChild($temContent);
   $temDiv2.appendChild($temButton);
 
   $box.appendChild($temLi);
 }
-function functionAdd(id) {
+function functionAdd() {
+  var btnValue = event.target.dataset.id;
   for (var j = 0; j < product.length; j++) {
-    if (product[j].id === parseInt(id)) {
+    if (product[j].id === parseInt(btnValue)) {
       var quantity = 1;
       var index = findProductInCart(cart, product[j]);
       console.log(index);
@@ -65,6 +67,25 @@ function functionAdd(id) {
   }
   count_cart();
 }
+functionAdd();
+// function functionAdd(id) {
+//   for (var j = 0; j < product.length; j++) {
+//     if (product[j].id === parseInt(id)) {
+//       var quantity = 1;
+//       var index = findProductInCart(cart, product[j]);
+//       console.log(index);
+//       if (index !== -1) {
+//         cart[index].quantity += quantity;
+//       }
+//       else {
+//         var object = product[j];
+//         cart.push({ object, quantity });
+//       }
+//       localStorage.setItem('CART', JSON.stringify(cart));
+//     }
+//   }
+//   count_cart();
+// }
 function findProductInCart(cart, product) {
   var index = -1
   for (var k = 0; k < cart.length; k++) {
