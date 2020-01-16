@@ -12,7 +12,7 @@ function showCart() {
       '<td class="td-product-quantity">' + getData[i].quantity + '</td>' +
       '<td class"td-product-price">$' + getData[i].object.price + '</td>' +
       '<td class="td-product-sub-total">$' + (getData[i].object.price * getData[i].quantity) + '</td>' +
-      '<td class="td-product-delete" id="delete"' + j + ' onclick="deleteItem(' + j + ')"><i class="fa fa-times"></i></td>' +
+      '<td class="td-product-delete" onclick="deleteItem(' + j + ')"><i class="fa fa-times"></i></td>' +
       '</tr>';
   }
 }

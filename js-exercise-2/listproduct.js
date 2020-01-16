@@ -49,7 +49,7 @@ for (var i = 0; i < product.length; i++) {
 }
 function functionAdd(id) {
   for (var j = 0; j < product.length; j++) {
-    if (product[j].id == id) {
+    if (product[j].id === parseInt(id)) {
       var quantity = 1;
       var index = findProductInCart(cart, product[j]);
       console.log(index);
