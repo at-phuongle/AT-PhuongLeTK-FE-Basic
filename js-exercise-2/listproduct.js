@@ -1,37 +1,76 @@
-var add_cart = [
-  {
-  }
-];
-
-if (!localStorage.getItem('add-cart')) {
-  localStorage.setItem('add-cart', JSON.stringify(add_cart));
+var cart = [];
+if (!localStorage.getItem('CART')) {
+  localStorage.setItem('CART', JSON.stringify(cart));
 } else {
-  add_cart = JSON.parse(localStorage.getItem('add-cart'));
-  document.getElementById('count').innerHTML = add_cart.length;
+  cart = JSON.parse(localStorage.getItem('CART'));
 }
-var box = document.getElementById('content-detail');
-for (var i = 0; i < getObject.length; i++) {
-  box.innerHTML +=
-    "<div class='page-main__product-item'>" +
-    "<img class='page-main__product-img' src='./images/" + getObject[i].image + "'>" +
-    "<div class='page-main__product-detail'>" +
-    "<h3 class='page-main__product-name'>" + getObject[i].name + "</h3>" +
-    "<p class='page-main__product-desc'>" + getObject[i].description + "</p>" +
-    "<p class='page-main__product-price'>Price: <span class='price'>" + getObject[i].price + "</span></p>" +
-    "</div>" +
-    "<button class='insert-cart-btn' id='" + getObject[i].id + "' onclick='functionAdd(" + getObject[i].id + ")'>Add cart</button>"
-  "</div>";
+var $box = document.getElementById('js-product-list');
+var $temLi, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
+for (var i = 0; i < product.length; i++) {
+  $temLi = document.createElement('li');
+  $temLi.setAttribute('class', 'product-item');
+
+  $temImg = document.createElement('img');
+  $temImg.setAttribute('class', 'product-img');
+  $temImg.setAttribute('src', './images/' + product[i].image);
+  $temLi.appendChild($temImg);
+
+  $temDiv2 = document.createElement('div');
+  $temDiv2.setAttribute('class', 'product-detail');
+  $temLi.appendChild($temDiv2);
+
+  $temName = document.createElement('h3');
+  $temName.setAttribute('class', 'product-name');
+  $temContent = document.createTextNode(product[i].name);
+  $temName.appendChild($temContent);
+  $temDiv2.appendChild($temName);
+
+  $temDes = document.createElement('p');
+  $temDes.setAttribute('class', 'product-desc');
+  $temContent = document.createTextNode(product[i].description);
+  $temDes.appendChild($temContent);
+  $temDiv2.appendChild($temDes);
+
+  $temPrice = document.createElement('p');
+  $temPrice.setAttribute('class', 'product-price');
+  $temContent = document.createTextNode('Price: $' + product[i].price);
+  $temPrice.appendChild($temContent);
+  $temDiv2.appendChild($temPrice);
+
+  $temButton = document.createElement('button');
+  $temButton.setAttribute('class', 'insert-cart-btn');
+  $temButton.setAttribute('id', product[i].id);
+  $temButton.onclick = function () { functionAdd(this.id) }
+  $temContent = document.createTextNode('Add to cart');
+  $temButton.appendChild($temContent);
+  $temDiv2.appendChild($temButton);
+
+  $box.appendChild($temLi);
 }
 function functionAdd(id) {
-  document.getElementById(id).disabled = 'true';
-  document.getElementById(id).style.color = "#464545";
-  var index = id - 1;
-  add_cart.push(product[index]);
-  localStorage.setItem('add-cart', JSON.stringify(add_cart));
-  var getIndex = JSON.parse(localStorage.getItem('add-cart'));
-  document.getElementById('js-count').innerHTML = getIndex.length;
+  for (var j = 0; j < product.length; j++) {
+    if (product[j].id == id) {
+      var quantity = 1;
+      var index = findProductInCart(cart, product[j]);
+      console.log(index);
+      if (index !== -1) {
+        cart[index].quantity += quantity;
+      }
+      else {
+        var object = product[j];
+        cart.push({ object, quantity });
+      }
+      localStorage.setItem('CART', JSON.stringify(cart));
+    }
+  }
+  count_cart();
 }
-for (var i = 0; i < add_cart.length; i++) {
-  document.getElementById(add_cart[i].id).disabled = 'true';
-  document.getElementById(add_cart[i].id).style.color = "#464545";
+function findProductInCart(cart, product) {
+  var index = -1
+  for (var k = 0; k < cart.length; k++) {
+    if (cart[k].object.id === product.id) {
+      index = k;
+    }
+  }
+  return index;
 }

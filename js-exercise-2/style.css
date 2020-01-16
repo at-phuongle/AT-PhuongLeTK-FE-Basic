@@ -20,8 +20,7 @@ body {
 }
 .container {
   width: 100%;
-  /* max-width: 1240px; */
-  max-width: 77.5%;
+  max-width: 1050px;
   margin: 0 auto;
 }
 .container-fluid {
@@ -93,7 +92,13 @@ body {
   font-size: 18px;
   margin-left: 7px;
   font-weight: bold;
-  color: #4cc1fc;
+  color: #fa9ded;
+}
+.fa-phone {
+  color: #f334da;
+}
+.fa-shopping-cart {
+  color: #f334da;
 }
 .page-nav {
   font-family: Arial, Helvetica, sans-serif;
@@ -127,6 +132,7 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   list-style-type: none;
+  margin-left: 0px;
   border: 0;
 }
 .page-navbar__list {
@@ -189,13 +195,13 @@ body {
   color: #8e8e8e;
 }
 .page-navbar__link--active {
-  color: #62c6f8;
+  color: #f856cf;
 }
 .page-navbar__item:hover .page-navbar__link {
-  color: #70caf8;
+  color: #f856cf;
 }
 .page-navbar__item:active .page-navbar__link {
-  color: #70caf8;
+  color: #f856cf;
 }
 .page-header__cart {
   margin-left: 15px;
@@ -228,8 +234,10 @@ body {
   content: "\00a0/\00a0";
   margin: 0 10px;
 }
-.page-main__content-detail {
-  margin-top: 75px;
+.page-main__content {
+  padding: 50px 0;
+}
+.product-list {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   display: -webkit-box;
@@ -242,40 +250,40 @@ body {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
 }
-.page-main__product-item {
+.product-item {
+  list-style: none;
   width: 23%;
-  margin: 0 10px 20px 10px;
-  border: 1px solid #ebebeb;
+  margin: 10px 10px;
+  border: 1px solid #e9d9d9;
   box-sizing: border-box;
 }
-.page-main__product-img {
+.product-img {
   width: 98%;
 }
-.page-main__product-item:nth-child(2) .page-main__product-img,
-.page-main__product-item:nth-child(6) .page-main__product-img {
-  margin-left: 2px;
+.product-detail {
+  padding: 20px;
 }
-.page-main__product-detail {
-  padding-top: 19px;
-  padding-left: 23px;
-  padding-bottom: 22.5px;
-}
-.page-main__product-name {
+.product-name {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  height: 50px;
   margin-bottom: 9px;
 }
-.page-main__product-desc {
-  margin: 0;
+.product-desc {
   font-size: 13px;
   line-height: 18px;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
-.page-main__product-price {
+.product-price {
   margin-top: 20px;
-}
-.price {
   font-weight: bold;
+}
+.page-main-title {
+  text-transform: uppercase;
 }
 .insert-cart-btn {
   display: flex;
@@ -283,18 +291,17 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  margin: 0 auto;
-  color: #e77575;
-  background-color: #70caf8;
+  margin: 20px auto 0;
+  color: #2b1616;
+  background-color: #f88fc9;
   padding: 5px 10px;
   border-radius: 2px;
 }
-.insert-cart:hover {
-  color: rgb(238, 108, 15);
+.insert-cart-btn:hover {
+  background-color: #fabef5;
 }
-.section-cart-list {
-  margin-top: 75px;
-  margin-bottom: 75px;
+.cart-list {
+  margin-top: 50px;
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -308,25 +315,60 @@ body {
 }
 table {
   border-collapse: collapse;
+  width: 85%;
 }
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid #e9d9d9;
   text-align: left;
   padding: 8px;
 }
-.quatity-detail {
-  border: 1px solid rgb(0, 183, 255);
+th {
+  background-color: #e6bfd5;
 }
-.input-price {
-  background-color: white;
+tr:nth-child(even) {
+  background-color: #f1e7e7;
+}
+.td-product-stt {
+  width: 2%;
+}
+.td-product-name {
+  width: 58%;
+}
+.td-product-quantity {
+  width: 10%;
+}
+.td-product-price {
+  width: 14%;
+}
+.td-product-sub-total {
+  width: 15%;
+}
+.td-product-delete {
+  width: 4%;
+  text-align: center;
+  background-color: rgb(224, 73, 73);
+}
+.tr-total {
+  background-color: #f4d4f8;
+}
+.tr-total td:nth-child(1) {
+  border-right: none;
+}
+.tr-total td:nth-child(2),
+.tr-total td:nth-child(3) {
+  border-right: none;
+  border-left: none;
+}
+.td-total {
+  font-weight: bold;
 }
 .fa-times {
-  color: red;
+  color: rgb(255, 254, 254);
 }
 /* === footer === */
 .page-footer {
-  background-color: #f0aaea;
+  background-color: #f7b1f1;
   color: #ffffff;
 }
 .page-footer-fluid {

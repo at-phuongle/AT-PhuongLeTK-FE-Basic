@@ -13,13 +13,13 @@
 <body>
   <header class="page-header">
     <section class="container page-header__top">
-      <a><img class="page-header__logo" src="./images/logo.jpg" alt=""></a>
+      <a href="./listproduct.html"><img class="page-header__logo" src="./images/logo.jpg" alt=""></a>
       <div class="page-header__name">
         <span class="page-header__title">Perfume</span>
         <span class="page-header__description">Your perfume is your message</span>
       </div>
       <div class="page-header__contact">
-        <img src="./images/iconCall.jpg" alt="">
+        <i class="fa fa-phone"></i>
         <span class="page-header__help"> Question for the doctor? </span>
         <span class="page-header__help-number">05113941 977</span>
       </div>
@@ -78,17 +78,10 @@
       </div>
     </section>
     <section class="page-main__content">
-      <div class="container page-main__content-detail" id="content-detail">
-        <!-- <div class="page-main__product-item">
-          <img class="page-main__product-img" src="./images/image-1.jpg">
-          <div class="page-main__product-detail">
-            <h3 class="page-main__product-name">Neck shoulder pain</h3>
-            <p class="page-main__product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna</p>
-            <p class="page-main__product-price">Price: <span class="price">$222</span></p>
-          </div>
-          <button class="add-cart">Add to cart</button>
-        </div> -->
+      <div class="container">
+        <ul class="product-list" id="js-product-list">
+
+        </ul>
       </div>
     </section>
   </main>
@@ -134,9 +127,6 @@
   </footer>
   <script src="./common.js"></script>
   <script src="./listproduct.js"></script>
-  <!-- <script type="text/javascript">
-    functionAdd();
-  </script> -->
 </body>
 
 </html>

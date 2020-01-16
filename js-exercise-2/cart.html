@@ -13,13 +13,14 @@
 <body>
   <header class="page-header">
     <section class="container page-header__top">
-      <a><img class="page-header__logo" src="./images/logo.jpg" alt=""></a>
+      <a href="./listproduct.html"><img class="page-header__logo" src="./images/logo.jpg" alt=""></a
+        href="./listproduct.html">
       <div class="page-header__name">
         <span class="page-header__title">Perfume</span>
         <span class="page-header__description">Your perfume is your message</span>
       </div>
       <div class="page-header__contact">
-        <img src="./images/iconCall.jpg" alt="">
+        <i class="fa fa-phone"></i>
         <span class="page-header__help"> Question for the doctor? </span>
         <span class="page-header__help-number">05113941 977</span>
       </div>
@@ -81,35 +82,26 @@
       </div>
     </section>
     <section class="page-main__content">
-      <div class="container section-cart-list">
-        <table>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Subtotal</th>
-            <th></th>
-          </tr>
-          <tbody id="bodyTable">
-            <!-- <tr>
-            <td>1</td>
-            <td>Image, Name</td>
-            <td>1</td>
-            <td>$20</td>
-            <td>X</td>
-            <td>$20</td>
-          </tr> -->
-          </tbody>
-          <tr id="Sum-money">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Total</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+      <div class="container">
+        <h2 class="page-main-title">List product from cart</h2>
+        <div class="cart-list">
+          <table class="tb-cart-product">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+            <tbody id="js-cart-list">
+
+            </tbody>
+            <tbody id="js-cart-total">
+
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
   </main>
@@ -155,9 +147,6 @@
   </footer>
   <script src="./common.js"></script>
   <script src="./cart.js"></script>
-  <!-- <script type="text/javascript">
-
-  </script> -->
 </body>
 
 </html>
