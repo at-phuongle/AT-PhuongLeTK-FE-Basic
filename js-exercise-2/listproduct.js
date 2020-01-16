@@ -38,7 +38,7 @@ for (var i = 0; i < product.length; i++) {
   $temDiv2.appendChild($temPrice);
 
   $temButton = document.createElement('button');
-  $temButton.setAttribute('class', 'insert-cart-btn');
+  $temButton.setAttribute('class', 'btn-add');
   $temButton.setAttribute('id', product[i].id);
   $temButton.onclick = function () { functionAdd(this.id) }
   $temContent = document.createTextNode('Add to cart');
