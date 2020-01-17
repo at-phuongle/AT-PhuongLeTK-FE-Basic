@@ -325,7 +325,7 @@ button {
 li {
   list-style: none;
 }
-.main-list {
+.service-list {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   display: -webkit-box;
@@ -339,14 +339,17 @@ li {
   -webkit-flex-wrap: wrap;
   width: 100%;
 }
-.main-item {
-  width: 31.2%;
+.col-4 {
+  width: 33.3333333%;
+}
+.service-item {
+  width: 31.2167%;
   margin-left: 20px;
   margin-bottom: 20px;
   border: 1px solid #ebebeb;
   box-sizing: border-box;
 }
-.main-link {
+.service-link {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -358,26 +361,26 @@ li {
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
 }
-.main-img {
+.service-img {
   width: 100%;
 }
-.main-card {
+.service-card {
   padding-top: 19px;
   padding-left: 23px;
   padding-bottom: 22.5px;
 }
-.main-title {
+.service-name {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 9px;
 }
-.main-desc {
+.service-desc {
   margin: 0;
   font-size: 13px;
   line-height: 18px;
 }
-.main-link-icon {
+.service-link-icon {
   background-color: #62c6f8;
   position: relative;
 }
