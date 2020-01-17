@@ -50,17 +50,20 @@ for (var i = 0; i < product.length; i++) {
 }
 function functionAdd() {
   var btnValue = event.target.dataset.id;
+  var quantity = 1;
+  var index = -1;
   for (var j = 0; j < product.length; j++) {
     if (product[j].id === parseInt(btnValue)) {
-      var quantity = 1;
-      var index = findProductInCart(cart, product[j]);
-      console.log(index);
-      if (index !== -1) {
-        cart[index].quantity += quantity;
+      for (var k = 0; k < cart.length; k++) {
+        if (cart[k].object.id === product[j].id) {
+          index = k;
+        }
       }
-      else {
+      if (index === -1) {
         var object = product[j];
         cart.push({ object, quantity });
+      } else {
+        cart[index].quantity += quantity;
       }
       localStorage.setItem('CART', JSON.stringify(cart));
     }
@@ -68,30 +71,3 @@ function functionAdd() {
   count_cart();
 }
 functionAdd();
-// function functionAdd(id) {
-//   for (var j = 0; j < product.length; j++) {
-//     if (product[j].id === parseInt(id)) {
-//       var quantity = 1;
-//       var index = findProductInCart(cart, product[j]);
-//       console.log(index);
-//       if (index !== -1) {
-//         cart[index].quantity += quantity;
-//       }
-//       else {
-//         var object = product[j];
-//         cart.push({ object, quantity });
-//       }
-//       localStorage.setItem('CART', JSON.stringify(cart));
-//     }
-//   }
-//   count_cart();
-// }
-function findProductInCart(cart, product) {
-  var index = -1
-  for (var k = 0; k < cart.length; k++) {
-    if (cart[k].object.id === product.id) {
-      index = k;
-    }
-  }
-  return index;
-}
