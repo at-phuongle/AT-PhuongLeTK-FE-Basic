@@ -20,7 +20,7 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1050px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .container-fluid {
@@ -99,6 +99,9 @@ body {
 }
 .fa-shopping-cart {
   color: #f334da;
+}
+.fa-shopping-cart:hover {
+  transform: scale(1.2);
 }
 .page-nav {
   font-family: Arial, Helvetica, sans-serif;
@@ -289,6 +292,7 @@ body {
 }
 .page-main-title {
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .btn-add {
   display: flex;
@@ -312,7 +316,6 @@ body {
   transform: translateY(3px);
 }
 .cart-list {
-  margin-top: 50px;
   display: flex;
   display: -webkit-box;
   display: -moz-box;
