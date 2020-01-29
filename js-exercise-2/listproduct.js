@@ -1,8 +1,8 @@
-var cart = [];
-if (!localStorage.getItem('CART')) {
-  localStorage.setItem('CART', JSON.stringify(cart));
+var listCart = [];
+if (!localStorage.getItem('cart')) {
+  localStorage.setItem('cart', JSON.stringify(listCart));
 } else {
-  cart = JSON.parse(localStorage.getItem('CART'));
+  listCart = JSON.parse(localStorage.getItem('cart'));
 }
 var $box = document.getElementById('js-product-list');
 var $temLi, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
@@ -42,7 +42,7 @@ for (var i = 0; i < product.length; i++) {
   $temButton.setAttribute('data-id', product[i].id);
   // $temButton.onclick = function () { functionAdd(this.id) }
   $temButton.addEventListener('click', functionAdd, false);
-  $temContent = document.createTextNode('Add to cart');
+  $temContent = document.createTextNode('Add to listCart');
   $temButton.appendChild($temContent);
   $temDiv2.appendChild($temButton);
 
@@ -54,18 +54,18 @@ function functionAdd() {
   var index = -1;
   for (var j = 0; j < product.length; j++) {
     if (product[j].id === parseInt(btnValue)) {
-      for (var k = 0; k < cart.length; k++) {
-        if (cart[k].object.id === product[j].id) {
+      for (var k = 0; k < listCart.length; k++) {
+        if (listCart[k].object.id === product[j].id) {
           index = k;
         }
       }
       if (index === -1) {
         var object = product[j];
-        cart.push({ object, quantity });
+        listCart.push({ object, quantity });
       } else {
-        cart[index].quantity += quantity;
+        listCart[index].quantity += quantity;
       }
-      localStorage.setItem('CART', JSON.stringify(cart));
+      localStorage.setItem('cart', JSON.stringify(listCart));
     }
   }
   count_cart();

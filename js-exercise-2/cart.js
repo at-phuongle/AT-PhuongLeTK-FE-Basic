@@ -1,6 +1,6 @@
-var getData = JSON.parse(localStorage.getItem('CART'));
+var getData = JSON.parse(localStorage.getItem('cart'));
 var $box = document.getElementById('js-cart-list');
-var $trTotal = document.getElementById('js-cart-total');
+var $total = document.getElementById('js-total');
 var j;
 function showCart() {
   $box.innerHTML = '';
@@ -18,19 +18,10 @@ function showCart() {
       '<td class="td-product-delete"><button type="button" class="js-bt-delete" data-id="' + getData[i].object.id + '">X</button></td>' +
       '</tr>';
   }
-  $trTotal.innerHTML = '';
-  $trTotal.innerHTML +=
-    '<tr class="tr-total" id="js-total">' +
-    '<td></td>' +
-    '<td></td>' +
-    '<td></td>' +
-    '<td></td>' +
-    '<td class="td-total"> Total </td>' +
-    '<td>$' + sumTotal() + '</td>' +
-    '<td></td>' +
-    '</tr>';
+  $total.innerHTML = '$' + sumTotal();
 }
 showCart();
+
 function sumTotal() {
   var sum = 0;
   for (var i = 0; i < getData.length; i++) {
@@ -49,7 +40,7 @@ function deleteItem() {
           getData.splice(d, 1);
         }
       }
-      localStorage.setItem('CART', JSON.stringify(getData));
+      localStorage.setItem('cart', JSON.stringify(getData));
       showCart();
       count_cart();
       deleteItem();
@@ -57,17 +48,3 @@ function deleteItem() {
   }
 }
 deleteItem();
-// function deleteItem(id) {
-//   console.log("abc");
-//   for (var d = 0; d < getData.length; d++) {
-//     if (getData[d].object.id === parseInt(id)) {
-//       var index = getData.indexOf(getData[d]);
-//       getData.splice(d, 1);
-//       localStorage.setItem('CART', JSON.stringify(getData));
-//       $box.innerHTML = [];
-//       $trTotal.innerHTML = [];
-//       count_cart();
-//       showCart();
-//     }
-//   }
-// }

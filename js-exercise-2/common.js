@@ -55,17 +55,10 @@ var product = [
     description: 'Launch year: 2016. Top notes: Black pepper, Clove, Pink pepper. Heart notes: Jasmine, Tuberose, Ylang-ylang. Base notes: Pink pepper, Vetiver. ',
     price: '39'
   }
-]
+];
 var $number_cart = document.getElementById('js-count');
 function count_cart() {
-  var cart = JSON.parse(localStorage.getItem('CART'));
-  $number_cart.innerHTML = cart.length;
-  // console.log(cart);
-  // var cart = JSON.parse(localStorage.getItem('CART'));
-  // var count = 0;
-  // for (var i = 0; i < cart.length; i++) {
-  //   count += cart[i].quantity;
-  // }
-  // number_cart.innerHTML = count;
+  var listCart = JSON.parse(localStorage.getItem('cart'));
+  $number_cart.innerHTML = listCart.length;
 }
 count_cart();
