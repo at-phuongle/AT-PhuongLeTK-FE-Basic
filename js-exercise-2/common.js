@@ -59,6 +59,11 @@ var product = [
 var $number_cart = document.getElementById('js-count');
 function count_cart() {
   var listCart = JSON.parse(localStorage.getItem('cart'));
-  $number_cart.innerHTML = listCart.length;
+  if (listCart != []) {
+    $number_cart.innerHTML = listCart.length;
+  } else {
+    $number_cart.innerHTML = '0';
+  }
+  // $number_cart.innerHTML = listCart.length;
 }
 count_cart();
