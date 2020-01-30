@@ -59,7 +59,7 @@ var product = [
 var $number_cart = document.getElementById('js-count');
 function count_cart() {
   var listCart = JSON.parse(localStorage.getItem('cart'));
-  if (listCart != []) {
+  if (listCart) {
     $number_cart.innerHTML = listCart.length;
   } else {
     $number_cart.innerHTML = '0';
