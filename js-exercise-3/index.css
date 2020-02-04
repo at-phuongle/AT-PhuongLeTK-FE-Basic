@@ -35,7 +35,7 @@ button {
 }
 /*========Header========*/
 .header-top {
-  background-color: #f1e9b7;
+  background-color: #e7c891;
 }
 .header-top-wrap {
   display: flex;
@@ -61,10 +61,10 @@ button {
   font-size: 20px;
 }
 .navbar-item:first-child a {
-  color: #e1c28b;
+  color: #ffffff;
 }
 .navbar-item:hover .navbar-link {
-  color: #e1c28b;
+  color: #ffffff;
 }
 .navbar-link {
   text-transform: uppercase;
