@@ -31,7 +31,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 button {
-  background-color: #ffffff;
+  background-color: #e7c891;
 }
 /*========Header========*/
 .header-top {
@@ -243,7 +243,6 @@ button {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   margin-left: auto;
-  background-color: #e1c28b;
   color: #c92f2f;
   font-size: x-large;
   border-radius: 15px;
@@ -257,6 +256,8 @@ button {
   position: absolute;
   top: 5px;
   right: 10px;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 .fa-telegram:hover {
   color: #1da1f2;
