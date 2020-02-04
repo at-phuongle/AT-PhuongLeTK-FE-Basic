@@ -42,7 +42,7 @@ function countComment() {
 }
 
 function addComment() {
-  var $btnAdd = document.getElementById("js-btn-add");
+  var $btnAdd = document.getElementById('js-btn-add');
   $btnAdd.addEventListener('click', function (event) {
     var strComment = document.getElementById('js-input-comment').value;
     if (strComment) {
