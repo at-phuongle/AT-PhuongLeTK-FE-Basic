@@ -24,7 +24,7 @@ function showComment() {
       '<p class="comment-detail">' + arrComment[i] + '</p>' +
       '</li>' +
       '</ul>' +
-      '<button type="button" class="btn-delete-comment" data-id="' + i + '">X</button>'
+      '<button type="button" class="btn-delete-comment" data-id="' + i + '">X</button>' +
     '</li>'
   }
   deleteComment();
