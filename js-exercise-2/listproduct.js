@@ -46,7 +46,7 @@ for (var i = 0; i < product.length; i++) {
   $temButton.setAttribute('data-id', product[i].id);
   // $temButton.onclick = function () { functionAdd(this.id) }
   $temButton.addEventListener('click', functionAdd, false);
-  $temContent = document.createTextNode('Add to listCart');
+  $temContent = document.createTextNode('Add to cart');
   $temButton.appendChild($temContent);
   $temDiv2.appendChild($temButton);
 
