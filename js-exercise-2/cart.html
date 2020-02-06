@@ -12,89 +12,91 @@
 
 <body>
   <header class="page-header">
-    <section class="container page-header__top">
-      <a href="./listproduct.html"><img class="page-header__logo" src="./images/logo.png" alt=""></a
-        href="./listproduct.html">
-      <div class="page-header__name">
-        <span class="page-header__title">Perfume</span>
-        <span class="page-header__description">Your perfume is your message</span>
-      </div>
-      <div class="page-header__contact">
-        <i class="fa fa-phone"></i>
-        <span class="page-header__help"> Question for the doctor? </span>
-        <span class="page-header__help-number">05113941 977</span>
-      </div>
-      <div class="page-header__cart">
-        <a href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
-        <span id="js-count"></span>
+    <section class="header-top">
+      <div class="container">
+        <div class="header-top-wrap">
+          <a href="./listproduct.html">
+            <img src="./images/logo.jpg" alt="">
+          </a>
+          <div class="header-top-left">
+            <span class="page-title"><a href="./listproduct.html">Perfume</a></span>
+            <span class="page-des">Your perfume is your message</span>
+          </div>
+          <div class="header-top-right">
+            <i class="fa fa-phone primary"></i>
+            <span class="header-top-right-item"> Question for us? </span>
+            <span class="header-top-right-item phone-number primary">05113941 977</span>
+            <div class="cart">
+              <a href="./cart.html"><i class="fa fa-shopping-cart primary"></i></a>
+              <span id="js-count"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <nav class="page-nav">
-      <div class="container container--nav">
-        <ul class="page-navbar__list">
-          <li class="page-navbar__item page-navbar__item--first">
-            <a class="page-navbar__link" href="#">Home</a>
-          </li>
-          <li class="page-navbar__item">
-            <a class="page-navbar__link" href="#">About us</a>
-          </li>
-          <li class="page-navbar__item">
-            <a class="page-navbar__link page-navbar__link--active" href="listproduct.html">List product</a>
-          </li>
-          <li class="page-navbar__item">
-            <a class="page-navbar__link" href="#">Sale</a>
-          </li>
-          <li class="page-navbar__item">
-            <a class="page-navbar__link" href="#">Blog review</a>
-          </li>
-          <li class="page-navbar__item">
-            <a class="page-navbar__link" href="#">Consult & contact</a>
-          </li>
-        </ul>
-        <ul class="page-navbar__icon">
-          <li class="page-navbar__item--icon">
-            <a class="page-navbar__link" href="#"><img src="./images/iconFacebook.jpg" alt=""></a>
-          </li>
-          <li class="page-navbar__item--icon">
-            <a class="page-navbar__link" href="#"><img src="./images/iconGoogle.jpg" alt=""></a>
-          </li>
-          <li class="page-navbar__item--icon">
-            <a class="page-navbar__link" href="#"><img src="./images/iconYoutube.jpg" alt=""></a>
-          </li>
-        </ul>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-wrap">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link primary" href="listproduct.html">List product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Consult contact</a>
+            </li>
+          </ul>
+          <ul class="nav-icon">
+            <li class="nav-item-icon">
+              <a class="nav-link" href="#"><img src="./images/iconFacebook.jpg" alt=""></a>
+            </li>
+            <li class="nav-item-icon">
+              <a class="nav-link" href="#"><img src="./images/iconGoogle.jpg" alt=""></a>
+            </li>
+            <li class="nav-item-icon">
+              <a class="nav-link" href="#"><img src="./images/iconYoutube.jpg" alt=""></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
   <main class="page-main">
-    <section class="section__banner">
+    <section class="section-banner">
       <div class="container">
         <ul class="breadcrumb">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="#">Home</a>
-          </li>
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="./listproduct.html">List Product</a>
-          </li>
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="./cart.html">Cart</a>
-          </li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="./listproduct.html">List product</a></li>
         </ul>
       </div>
     </section>
-    <section class="page-main__content">
+    <section class="page-main-content">
       <div class="container">
         <h2 class="page-main-title">List product from cart</h2>
         <div class="cart-list">
           <table class="tb-cart-product">
-            <tr>
-              <th>#</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Quantity</th>
-              <th>Price</th>
-              <th>Subtotal</th>
-              <th></th>
-            </tr>
+            <thead class="thead">
+              <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
             <tbody id="js-cart-list">
 
             </tbody>
@@ -116,40 +118,48 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer-top">
+    <section class="footer-top">
       <div class="container">
-        <ul class="info-list">
-          <li class="col-4 info-item">
-            <h4 class="info-name">About us</h4>
-            <ul class="info-card-list">
-              <li class="info-card-item info-card-item-dot"><a>General introduction</a></li>
-              <li class="info-card-item info-card-item-dot"><a>Human</a></li>
-              <li class="info-card-item info-card-item-dot"><a>Facuties and facelities</a></li>
+        <ul class="footer-list">
+          <li class="col-4 footer-item">
+            <h4 class="footer-item-title">About us</h4>
+            <ul class="footer-card-list">
+              <li class="footer-card-item footer-card-item-dot"><a class="footer-card-link">Distribution system</a></li>
+              <li class="footer-card-item footer-card-item-dot"><a class="footer-card-link">News - Offers</a></li>
+              <li class="footer-card-item footer-card-item-dot"><a class="footer-card-link">Beauty blogger review</a>
+              </li>
+              <li class="footer-card-item footer-card-item-dot"><a class="footer-card-link">Facuties and facelities</a>
+              </li>
             </ul>
           </li>
-          <li class="col-4 info-item">
-            <h4 class="info-name">Support</h4>
-            <ul class="info-card-list">
-              <li class="info-card-item info-card-item-dot"><a>Delivery</a></li>
-              <li class="info-card-item info-card-item-dot"><a>Exchange</a></li>
-              <li class="info-card-item info-card-item-dot"><a>Return</a></li>
+          <li class="col-4 footer-item">
+            <h4 class="footer-item-title">Support</h4>
+            <ul class="footer-card-list">
+              <li class="footer-card-item footer-card-item-dot"><a class="footer-card-link">Delivery</a></li>
+              <li class="footer-card-item footer-card-item-dot"><a class="footer-card-link">Exchange</a></li>
             </ul>
           </li>
-          <li class="col-4 info-item">
-            <h4 class="info-name">Social connection</h4>
-            <ul class="info-card-list">
-              <li class="info-card-item"><img src="./images/iconFB.png"><a class="info-card-link">Facebook</a></li>
-              <li class="info-card-item"><img src="./images/iconGG.png"><a class="info-card-link">Google</a></li>
-              <li class="info-card-item"><img src="./images/iconYB.png"><a class="info-card-link">Youtube</a></li>
+          <li class="col-4 footer-item">
+            <h4 class="footer-item-title">Social connection</h4>
+            <ul class="footer-card-list">
+              <li class="footer-card-item"><img src="./images/iconFB.png"><a class="footer-card-link">Facebook</a></li>
+              <li class="footer-card-item"><img src="./images/iconGG.png"><a class="footer-card-link">Google</a></li>
+              <li class="footer-card-item"><img src="./images/iconYB.png"><a class="footer-card-link">Youtube</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </section>
-    <section class="page-footer-bottom">
-      <div class="container coppy-right">
-        <span class="coppy-right-text"> 2018 - Copyright of Specialized Clinic</span>
-        <span class="coppy-right-author">Design by <span class="page-footer-author-name"> dd.com</span></span>
+    <section class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <span class="footer-bottom-left">
+            2018 - Copyright of Specialized Clinic
+          </span>
+          <span class="footer-bottom-right">
+            Design by
+          </span>
+        </div>
       </div>
     </section>
   </footer>

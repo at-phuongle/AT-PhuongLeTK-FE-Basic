@@ -5,19 +5,23 @@ if (!localStorage.getItem('cart')) {
   listCart = JSON.parse(localStorage.getItem('cart'));
 }
 var $box = document.getElementById('js-product-list');
-var $temLi, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
+var $temLi, $temDiv1, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
 for (var i = 0; i < product.length; i++) {
   $temLi = document.createElement('li');
-  $temLi.setAttribute('class', 'product-item');
+  $temLi.setAttribute('class', 'col-3');
+
+  $temDiv1 = document.createElement('div');
+  $temDiv1.setAttribute('class', 'product-item');
+  $temLi.appendChild($temDiv1);
 
   $temImg = document.createElement('img');
   $temImg.setAttribute('class', 'product-img');
   $temImg.setAttribute('src', './images/' + product[i].image);
-  $temLi.appendChild($temImg);
+  $temDiv1.appendChild($temImg);
 
   $temDiv2 = document.createElement('div');
-  $temDiv2.setAttribute('class', 'product-detail');
-  $temLi.appendChild($temDiv2);
+  $temDiv2.setAttribute('class', 'product-card');
+  $temDiv1.appendChild($temDiv2);
 
   $temName = document.createElement('h3');
   $temName.setAttribute('class', 'product-name');

@@ -15,7 +15,7 @@ function showCart() {
       '<td class="td-product-price">$' + getData[i].object.price + '</td>' +
       '<td class="td-product-sub-total">$' + (getData[i].object.price * getData[i].quantity) + '</td>' +
       //'<td class="td-product-delete" data-id="1" onclick="deleteItem(' + getData[i].object.id + ')"><i class="fa fa-times"></i></td>' +
-      '<td class="td-product-delete"><button type="button" class="js-bt-delete" data-id="' + getData[i].object.id + '">X</button></td>' +
+      '<td class="td-product-delete"><button type="button" class="btn-delete js-bt-delete" data-id="' + getData[i].object.id + '">X</button></td>' +
       '</tr>';
   }
   $total.innerHTML = '$' + sumTotal();
