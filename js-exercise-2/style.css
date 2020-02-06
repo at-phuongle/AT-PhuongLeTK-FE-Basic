@@ -61,6 +61,7 @@ button {
   display: flex;
   padding: 5px 10px;
   margin: 0 auto;
+  outline: none;
 }
 .primary {
   color: #f88fc9;
@@ -231,6 +232,7 @@ nav {
 }
 .btn-add:hover {
   background-color: #f88fc9;
+  color: #ffffff;
 }
 .btn-add:active {
   background-color: #f88fc9;
@@ -370,16 +372,6 @@ tfoot td:nth-child(3) {
   content: "\0040";
 }
 .footer-bottom-right {
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  justify-content: flex-end;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
   margin-left: auto;
 }
 .footer-bottom-right::after {
