@@ -26,6 +26,13 @@ body {
 .container-fluid {
   width: 100%;
 }
+.row {
+  margin: 0 -10px;
+}
+[class*="col-"] {
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
 .col-3 {
   width: 25%;
 }
@@ -198,11 +205,11 @@ nav {
 .product-list {
   flex-wrap: wrap;
 }
-.product-item {
+.product-wrap {
   display: block;
   overflow: hidden;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  /* margin-left: 20px;
+  margin-bottom: 20px; */
   border: 1px solid #e9d9d9;
   box-sizing: border-box;
 }
@@ -311,7 +318,6 @@ tfoot td:nth-child(3) {
 /* === footer === */
 .page-footer {
   background-color: #ffa7fb;
-  color: #ffffff;
 }
 .footer-top {
   border-bottom: 1px solid #f896fc;
@@ -352,7 +358,6 @@ tfoot td:nth-child(3) {
 }
 .footer-card-link {
   text-transform: uppercase;
-  color: #ffffff;
 }
 .footer-card-item {
   padding: 1px 0;
@@ -378,4 +383,16 @@ tfoot td:nth-child(3) {
   content: "dd.com";
   color: #b17609;
   margin-left: 5px;
+}
+.fa {
+  width: 15px;
+}
+.fa-facebook-f {
+  color: #344891;
+}
+.fa-google {
+  color: #b91f29;
+}
+.fa-youtube {
+  color: #a10220;
 }

@@ -8,10 +8,10 @@ var $box = document.getElementById('js-product-list');
 var $temLi, $temDiv1, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
 for (var i = 0; i < product.length; i++) {
   $temLi = document.createElement('li');
-  $temLi.setAttribute('class', 'col-3');
+  $temLi.setAttribute('class', 'col-3 product-item');
 
   $temDiv1 = document.createElement('div');
-  $temDiv1.setAttribute('class', 'product-item');
+  $temDiv1.setAttribute('class', 'product-wrap');
   $temLi.appendChild($temDiv1);
 
   $temImg = document.createElement('img');
