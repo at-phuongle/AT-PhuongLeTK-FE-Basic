@@ -1,64 +1,65 @@
-var listCart = [];
-if (!localStorage.getItem('cart')) {
-  localStorage.setItem('cart', JSON.stringify(listCart));
-} else {
-  listCart = JSON.parse(localStorage.getItem('cart'));
-}
 var $box = document.getElementById('js-product-list');
 var $temLi, $temDiv1, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
-for (var i = 0; i < product.length; i++) {
-  $temLi = document.createElement('li');
-  $temLi.setAttribute('class', 'col-3 product-item');
+var productLength = product.length;
 
-  $temDiv1 = document.createElement('div');
-  $temDiv1.setAttribute('class', 'product-wrap');
-  $temLi.appendChild($temDiv1);
+function showProduct() {
+  for (var i = 0; i < productLength; i++) {
+    $temLi = document.createElement('li');
+    $temLi.setAttribute('class', 'col-3 product-item');
 
-  $temImg = document.createElement('img');
-  $temImg.setAttribute('class', 'product-img');
-  $temImg.setAttribute('src', './images/' + product[i].image);
-  $temDiv1.appendChild($temImg);
+    $temDiv1 = document.createElement('div');
+    $temDiv1.setAttribute('class', 'product-wrap');
+    $temLi.appendChild($temDiv1);
 
-  $temDiv2 = document.createElement('div');
-  $temDiv2.setAttribute('class', 'product-card');
-  $temDiv1.appendChild($temDiv2);
+    $temImg = document.createElement('img');
+    $temImg.setAttribute('class', 'product-img');
+    $temImg.setAttribute('src', './images/' + product[i].image);
+    $temDiv1.appendChild($temImg);
 
-  $temName = document.createElement('h3');
-  $temName.setAttribute('class', 'product-name');
-  $temContent = document.createTextNode(product[i].name);
-  $temName.appendChild($temContent);
-  $temDiv2.appendChild($temName);
+    $temDiv2 = document.createElement('div');
+    $temDiv2.setAttribute('class', 'product-card');
+    $temDiv1.appendChild($temDiv2);
 
-  $temDes = document.createElement('p');
-  $temDes.setAttribute('class', 'product-desc');
-  $temContent = document.createTextNode(product[i].description);
-  $temDes.appendChild($temContent);
-  $temDiv2.appendChild($temDes);
+    $temName = document.createElement('h3');
+    $temName.setAttribute('class', 'product-name');
+    $temContent = document.createTextNode(product[i].name);
+    $temName.appendChild($temContent);
+    $temDiv2.appendChild($temName);
 
-  $temPrice = document.createElement('p');
-  $temPrice.setAttribute('class', 'product-price');
-  $temContent = document.createTextNode('Price: $' + product[i].price);
-  $temPrice.appendChild($temContent);
-  $temDiv2.appendChild($temPrice);
+    $temDes = document.createElement('p');
+    $temDes.setAttribute('class', 'product-desc');
+    $temContent = document.createTextNode(product[i].description);
+    $temDes.appendChild($temContent);
+    $temDiv2.appendChild($temDes);
 
-  $temButton = document.createElement('button');
-  $temButton.setAttribute('class', 'btn-add');
-  $temButton.setAttribute('data-id', product[i].id);
-  // $temButton.onclick = function () { functionAdd(this.id) }
-  $temButton.addEventListener('click', functionAdd, false);
-  $temContent = document.createTextNode('Add to cart');
-  $temButton.appendChild($temContent);
-  $temDiv2.appendChild($temButton);
+    $temPrice = document.createElement('p');
+    $temPrice.setAttribute('class', 'product-price');
+    $temContent = document.createTextNode('Price: $' + product[i].price);
+    $temPrice.appendChild($temContent);
+    $temDiv2.appendChild($temPrice);
 
-  $box.appendChild($temLi);
+    $temButton = document.createElement('button');
+    $temButton.setAttribute('class', 'btn-add');
+    $temButton.setAttribute('data-id', product[i].id);
+    // $temButton.onclick = function () { functionAdd(this.id) }
+    $temButton.addEventListener('click', functionAdd, false);
+    $temContent = document.createTextNode('Add to cart');
+    $temButton.appendChild($temContent);
+    $temDiv2.appendChild($temButton);
+
+    $box.appendChild($temLi);
+  }
 }
+showProduct();
+
 function functionAdd() {
   var btnValue = event.target.dataset.id;
   var quantity = 1;
   var index = -1;
-  for (var j = 0; j < product.length; j++) {
+  var cartLength = listCart.length;
+  for (var j = 0; j < productLength; j++) {
     if (product[j].id === parseInt(btnValue)) {
-      for (var k = 0; k < listCart.length; k++) {
+      for (var k = 0; k < cartLength; k++) {
         if (listCart[k].object.id === product[j].id) {
           index = k;
         }
@@ -72,6 +73,6 @@ function functionAdd() {
       localStorage.setItem('cart', JSON.stringify(listCart));
     }
   }
-  count_cart();
+  countCart();
 }
 functionAdd();

@@ -56,14 +56,20 @@ var product = [
     price: '39'
   }
 ];
-var $number_cart = document.getElementById('js-count');
-function count_cart() {
+var $numberCart = document.getElementById('js-count');
+
+function getCart() {
   var listCart = JSON.parse(localStorage.getItem('cart'));
   if (listCart) {
-    $number_cart.innerHTML = listCart.length;
+    listCart = listCart;
   } else {
-    $number_cart.innerHTML = '0';
+    listCart = [];
   }
-  // $number_cart.innerHTML = listCart.length;
+  return listCart;
 }
-count_cart();
+var listCart = getCart();
+
+function countCart() {
+  $numberCart.innerHTML = listCart.length;
+}
+countCart();
