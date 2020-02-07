@@ -1,5 +1,5 @@
 var $box = document.getElementById('js-product-list');
-var $temLi, $temDiv1, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton;
+var $temLi, $temDiv1, $temDiv2, $temImg, $temDes, $temName, $temPrice, $temContent, $temButton, $temPlus;
 var productLength = product.length;
 
 function showProduct() {
@@ -75,4 +75,3 @@ function functionAdd() {
   }
   countCart();
 }
-functionAdd();
