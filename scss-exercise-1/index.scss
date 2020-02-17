@@ -106,6 +106,7 @@ button {
   height: 46px;
   font-weight: 900;
 }
+//========Header=======
 .nav {
   font-family: Arial, Helvetica, sans-serif;
   border-top: 1px solid #e9e9e9;
@@ -184,6 +185,7 @@ button {
     }
   }
 }
+//=========Main==========
 .section-banner {
   @include flex-style(flex, true, true, true);
   background-image: url(./images/banner.png);
@@ -254,19 +256,19 @@ button {
     .categorise-item-detail {
       list-style-position: inside;
       padding: 5.4px 0;
-      .categorise-item-link {
-        font: {
-          family: $font-primary;
-          size: 12px;
-        }
-        text-decoration: none;
-        color: #30393f;
-      }
       &::before {
         content: "\2022";
         margin-right: 4px;
         color: #868e92;
       }
+    }
+    .categorise-item-link {
+      font: {
+        family: $font-primary;
+        size: 12px;
+      }
+      text-decoration: none;
+      color: #30393f;
     }
     &-booking {
       padding: 18px 20px;
@@ -285,11 +287,11 @@ button {
     .input-book-time {
       width: 100%;
       position: relative;
-      .input-book-img {
-        position: absolute;
-        top: 7px;
-        left: 228px;
-      }
+    }
+    .input-book-img {
+      position: absolute;
+      top: 7px;
+      left: 228px;
     }
     .btn-submit-book-info {
       color: #ffffff;
@@ -297,7 +299,7 @@ button {
     }
   }
 }
-.service-list {
+.service {
   @include flex-style(flex, true, true, true);
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -308,39 +310,40 @@ button {
   -webkit-flex-wrap: wrap;
   margin-top: -10px;
   margin-left: 10px;
-  .service-wrap {
+  &-wrap {
     display: block;
     overflow: hidden;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
   }
-  .service-card {
+  &-card {
     padding-top: 19px;
     padding-left: 23px;
     padding-bottom: 22.5px;
-    .service-name {
-      font: {
-        family: $font-secondary;
-        weight: bold;
-        size: 16px;
-      }
-      text-transform: uppercase;
-      margin-bottom: 9px;
-    }
-    .service-desc {
-      margin: 0;
-      font: {
-        family: $font-secondary;
-        size: 13px;
-      }
-      line-height: 18px;
-    }
   }
-  .service-link {
+  &-name {
+    font: {
+      family: $font-secondary;
+      weight: bold;
+      size: 16px;
+    }
+    text-transform: uppercase;
+    margin-bottom: 9px;
+  }
+  &-desc {
+    margin: 0;
+    font: {
+      family: $font-secondary;
+      size: 13px;
+    }
+    line-height: 18px;
+  }
+  &-link {
     @include flex-style(flex, true, true, false);
     margin-left: auto;
   }
 }
+//===========Footer==========
 .page-footer {
   margin-top: 28px;
   background-color: $bgcolor-primary;
@@ -353,19 +356,19 @@ button {
   &-top {
     border-bottom: 1px solid #81d1f9;
     box-sizing: border-box;
-    .info-list {
-      @include flex-style(flex, true, true, true);
-      padding-top: 30px;
-      padding-bottom: 20px;
-    }
-    .info-name {
+  }
+  .info {
+    @include flex-style(flex, true, true, true);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    &-name {
       font: {
         family: $font-primary-bold;
         size: 18px;
         weight: 500;
       }
     }
-    .info-card-list {
+    &-card-list {
       margin-top: 14px;
       font: {
         family: $font-secondary;
@@ -373,16 +376,16 @@ button {
       }
       list-style-position: inside;
     }
-    .info-card-item {
+    &-card-item {
       @include flex-style(flex, true, true, true);
       align-items: center;
       padding: 4.2px 0;
     }
-    .info-card-link {
+    &-card-link {
       margin-left: 6px;
       color: #ffffff;
     }
-    .info-card-item-dot::before {
+    &-card-item-dot::before {
       content: "\2022";
       color: #ffffff;
       font-size: large;

@@ -426,16 +426,16 @@ button {
   list-style-position: inside;
   padding: 5.4px 0;
 }
-.section-main-content .block .categorise-item-detail .categorise-item-link {
-  font-family: "UTM Avo", Arial, Helvetica;
-  font-size: 12px;
-  text-decoration: none;
-  color: #30393f;
-}
 .section-main-content .block .categorise-item-detail::before {
   content: "•";
   margin-right: 4px;
   color: #868e92;
+}
+.section-main-content .block .categorise-item-link {
+  font-family: "UTM Avo", Arial, Helvetica;
+  font-size: 12px;
+  text-decoration: none;
+  color: #30393f;
 }
 .section-main-content .block-booking {
   padding: 18px 20px;
@@ -478,7 +478,7 @@ button {
   width: 100%;
   position: relative;
 }
-.section-main-content form .input-book-time .input-book-img {
+.section-main-content form .input-book-img {
   position: absolute;
   top: 7px;
   left: 228px;
@@ -488,7 +488,7 @@ button {
   background-color: #4bbc56;
 }
 
-.service-list {
+.service {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -523,31 +523,31 @@ button {
   margin-top: -10px;
   margin-left: 10px;
 }
-.service-list .service-wrap {
+.service-wrap {
   display: block;
   overflow: hidden;
   border: 1px solid #ebebeb;
   box-sizing: border-box;
 }
-.service-list .service-card {
+.service-card {
   padding-top: 19px;
   padding-left: 23px;
   padding-bottom: 22.5px;
 }
-.service-list .service-card .service-name {
+.service-name {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 9px;
 }
-.service-list .service-card .service-desc {
+.service-desc {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-.service-list .service-link {
+.service-link {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -587,7 +587,7 @@ button {
   border-bottom: 1px solid #81d1f9;
   box-sizing: border-box;
 }
-.page-footer-top .info-list {
+.page-footer .info {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -615,18 +615,18 @@ button {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.page-footer-top .info-name {
+.page-footer .info-name {
   font-family: "UTMAvoBold", Arial, Helvetica;
   font-size: 18px;
   font-weight: 500;
 }
-.page-footer-top .info-card-list {
+.page-footer .info-card-list {
   margin-top: 14px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   list-style-position: inside;
 }
-.page-footer-top .info-card-item {
+.page-footer .info-card-item {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -654,11 +654,11 @@ button {
   align-items: center;
   padding: 4.2px 0;
 }
-.page-footer-top .info-card-link {
+.page-footer .info-card-link {
   margin-left: 6px;
   color: #ffffff;
 }
-.page-footer-top .info-card-item-dot::before {
+.page-footer .info-card-item-dot::before {
   content: "•";
   color: #ffffff;
   font-size: large;
