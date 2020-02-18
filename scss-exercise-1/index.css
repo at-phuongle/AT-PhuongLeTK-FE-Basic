@@ -1,4 +1,41 @@
 @charset "UTF-8";
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+a:hover,
+a:focus {
+  color: #62c6f8;
+}
+
 @font-face {
   font-family: "UTM Avo";
   font-style: normal;
@@ -11,12 +48,6 @@
   font-weight: normal;
   src: local("UTMAvoBold"), url("font/utm-avobold.woff") format("woff");
 }
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
 .container {
   width: 100%;
   max-width: 1240px;
@@ -31,7 +62,7 @@
   width: 33.3333333%;
 }
 
-[class^=col-] {
+[class^="col-"] {
   padding: 10px 10px;
   box-sizing: border-box;
 }
@@ -43,6 +74,10 @@ ul li {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+input {
+  border: none;
 }
 
 button {
@@ -466,7 +501,7 @@ button {
   -ms-flex-pack: justify;
   -webkit-justify-content: flex-start;
 }
-.section-main-content form input[type=text] {
+.section-main-content form input[type="text"] {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   height: 38px;
