@@ -7,8 +7,10 @@
   -moz-box-lines: single;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  margin-top: -10px;
-  margin-left: 10px;
+  margin: {
+    top: -10px;
+    left: 10px;
+  }
   &-wrap {
     display: block;
     overflow: hidden;
@@ -16,18 +18,20 @@
     box-sizing: border-box;
   }
   &-card {
-    padding-top: 19px;
-    padding-left: 23px;
-    padding-bottom: 22.5px;
+    padding: {
+      top: 19px;
+      left: 23px;
+      bottom: 22.5px;
+    }
   }
   &-name {
+    margin-bottom: 9px;
     font: {
       family: $font-secondary;
       weight: bold;
       size: 16px;
     }
     text-transform: uppercase;
-    margin-bottom: 9px;
   }
   &-desc {
     margin: 0;

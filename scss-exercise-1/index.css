@@ -84,9 +84,9 @@ a {
 }
 
 button {
-  font-family: "UTM Avo";
   width: 125.5px;
   height: 46px;
+  font-family: "UTM Avo";
   font-weight: 900;
 }
 
@@ -462,15 +462,15 @@ form input[type=text] {
   -webkit-justify-content: flex-start;
 }
 .nav-item {
-  font-size: 12px;
   padding: 24px 21.5px 20px 21.5px;
+  font-size: 12px;
   border-left: 1px solid #e9e9e9;
   box-sizing: border-box;
 }
 .nav-link {
-  text-transform: uppercase;
-  font-size: 12px;
   color: #8e8e8e;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 .nav-active {
   color: #4cc1fc;
@@ -508,8 +508,8 @@ form input[type=text] {
 }
 .nav-right .nav-item {
   margin-left: 10px;
-  border: none;
   padding: 0;
+  border: none;
 }
 
 .header-top-wrap {
@@ -568,10 +568,10 @@ form input[type=text] {
   margin-left: 18px;
 }
 .header-top-wrap .header-left .page-title {
-  text-transform: uppercase;
   padding-bottom: 2.5px;
   font-family: "UTMAvoBold", Arial, Helvetica;
   font-size: 20px;
+  text-transform: uppercase;
 }
 .header-top-wrap .header-left .page-desc {
   font-family: "UTM Avo", Arial, Helvetica;
@@ -612,8 +612,8 @@ form input[type=text] {
   font-weight: bold;
 }
 .header-top-wrap .header-right .phone-number {
-  font-size: 18px;
   color: #4cc1fc;
+  font-size: 18px;
 }
 
 .page-footer {

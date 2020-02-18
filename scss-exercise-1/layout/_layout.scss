@@ -1,8 +1,8 @@
 .section-banner {
   @include flex-style(flex, true, true, true);
-  background-image: url(./images/banner.png);
   width: 100%;
   height: 160px;
+  background-image: url(./images/banner.png);
   color: #0d1d25;
   .breadcrumb {
     @include flex-style(flex, true, true, true);
@@ -15,8 +15,8 @@
     text-transform: uppercase;
   }
   .breadcrumb-item + .breadcrumb-item:before {
-    color: black;
     content: "\00a0/\00a0";
+    color: black;
     margin: 0 10px;
   }
 }
@@ -57,9 +57,9 @@
       height: 50px;
     }
     .categorise-title::after {
+      content: "\2212";
       margin-left: auto;
       margin-right: 20px;
-      content: "\2212";
     }
     .categorise-item-list {
       padding: 12px 17px 15px 19px;

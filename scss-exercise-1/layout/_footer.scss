@@ -13,8 +13,10 @@
   }
   .info {
     @include flex-style(flex, true, true, true);
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding: {
+      top: 30px;
+      bottom: 20px;
+    }
     &-name {
       font: {
         family: $font-primary-bold;
