@@ -1,0 +1,109 @@
+.section-banner {
+  @include flex-style(flex, true, true, true);
+  background-image: url(./images/banner.png);
+  width: 100%;
+  height: 160px;
+  color: #0d1d25;
+  .breadcrumb {
+    @include flex-style(flex, true, true, true);
+  }
+  .breadcrumb-link {
+    font: {
+      family: $font-primary;
+      size: 12px;
+    }
+    text-transform: uppercase;
+  }
+  .breadcrumb-item + .breadcrumb-item:before {
+    color: black;
+    content: "\00a0/\00a0";
+    margin: 0 10px;
+  }
+}
+.section-main-content {
+  margin-top: 75px;
+  .layout-2col-left {
+    @include flex-style(flex, false, true, true);
+  }
+  .layout-2col-sidebar {
+    width: 31.3%;
+  }
+  .block {
+    margin-bottom: 42px;
+    background-color: #d9e4e9;
+    &-title {
+      padding-bottom: 18px;
+      font: {
+        family: $font-primary;
+        size: 18px;
+      }
+      text-transform: uppercase;
+    }
+    &-title::after {
+      content: "";
+      display: block;
+      width: 68px;
+      padding-top: 17px;
+      border-bottom: 1px solid $color-primary;
+    }
+    .categorise-title {
+      @include flex-style(flex, true, true, true);
+      text-transform: uppercase;
+      font: {
+        family: $font-primary;
+        size: 12px;
+      }
+      padding-left: 20px;
+      height: 50px;
+    }
+    .categorise-title::after {
+      margin-left: auto;
+      margin-right: 20px;
+      content: "\2212";
+    }
+    .categorise-item-list {
+      padding: 12px 17px 15px 19px;
+      background-color: #ffffff;
+    }
+    .categorise-item-detail {
+      list-style-position: inside;
+      padding: 5.4px 0;
+      &::before {
+        content: "\2022";
+        margin-right: 4px;
+        color: #868e92;
+      }
+    }
+    .categorise-item-link {
+      font: {
+        family: $font-primary;
+        size: 12px;
+      }
+      text-decoration: none;
+      color: #30393f;
+    }
+    &-booking {
+      padding: 18px 20px;
+    }
+  }
+  form {
+    input[type="text"] {
+      height: 38px;
+      margin-bottom: 16px;
+      padding-left: 12px;
+    }
+    .input-book-time {
+      width: 100%;
+      position: relative;
+    }
+    .input-book-img {
+      position: absolute;
+      top: 7px;
+      left: 228px;
+    }
+    .btn-submit-book-info {
+      color: #ffffff;
+      background-color: #4bbc56;
+    }
+  }
+}

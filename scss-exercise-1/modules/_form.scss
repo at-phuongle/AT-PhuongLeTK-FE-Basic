@@ -1,0 +1,8 @@
+form {
+  @include flex-style(flex, true, false, true);
+  input[type="text"] {
+    width: 100%;
+    font-family: $font-secondary;
+    box-sizing: border-box;
+  }
+}

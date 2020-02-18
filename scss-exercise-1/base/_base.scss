@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.row {
+  margin: 0 -10px;
+}
+.col-4 {
+  width: 33.3333333%;
+}
+[class^="col-"] {
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+a {
+  color: #000000;
+}

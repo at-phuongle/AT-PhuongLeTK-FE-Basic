@@ -1,0 +1,78 @@
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  &-wrap {
+    @include flex-style(flex, true, true, true);
+    height: 60px;
+  }
+  &-left {
+    @include flex-style(flex, true, true, true);
+  }
+  &-item {
+    font-size: 12px;
+    padding: 24px 21.5px 20px 21.5px;
+    border-left: 1px solid #e9e9e9;
+    box-sizing: border-box;
+  }
+  &-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8e8e8e;
+  }
+  &-active {
+    color: $color-primary;
+  }
+  &-item:first-child {
+    padding-left: 26px;
+    border: none;
+  }
+  &-right {
+    @include flex-style(flex, true, true, false);
+    margin-left: auto;
+    .nav-item {
+      margin-left: 10px;
+      border: none;
+      padding: 0;
+    }
+  }
+}
+.header-top-wrap {
+  @include flex-style(flex, true, true, true);
+  padding-top: 11px;
+  padding-bottom: 12px;
+  .header-left {
+    @include flex-style(flex, false, false, true);
+    margin-left: 18px;
+    .page-title {
+      text-transform: uppercase;
+      padding-bottom: 2.5px;
+      font: {
+        family: $font-primary-bold;
+        size: 20px;
+      }
+    }
+    .page-desc {
+      font: {
+        family: $font-primary;
+        size: 16px;
+      }
+    }
+  }
+  .header-right {
+    @include flex-style(flex, true, true, false);
+    margin-left: auto;
+    .header-top-right-item {
+      margin-left: 9px;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .phone-number {
+      font-size: 18px;
+      color: $color-primary;
+    }
+  }
+}
