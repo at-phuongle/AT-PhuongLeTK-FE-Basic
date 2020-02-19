@@ -25,7 +25,6 @@ li {
   text-align: center;
 }
 .product-list {
-  position: relative;
   margin-top: 50px;
   width: 300px;
   height: 200px;
@@ -44,17 +43,10 @@ li {
   padding: 10px 5px;
 }
 .group-title {
-  position: absolute;
   width: 28px;
   height: 28px;
   color: #ffffff;
   text-align: center;
-  /* position: -webkit-sticky;
-  position: sticky; */
-  /* top: 0; */
   background-color: #6829af;
   border-radius: 50%;
-}
-.sticky {
-  position: fixed;
 }

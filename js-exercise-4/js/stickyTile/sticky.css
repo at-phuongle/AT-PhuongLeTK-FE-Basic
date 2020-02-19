@@ -1,0 +1,10 @@
+.sticky-product-list {
+  position: relative !important;
+  display: block;
+}
+.sticky-product-group {
+  display: block;
+}
+.sticky-group-title {
+  position: absolute !important;
+}
