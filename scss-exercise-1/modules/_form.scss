@@ -3,6 +3,21 @@ form {
   input[type="text"] {
     width: 100%;
     font-family: $font-secondary;
-    box-sizing: border-box;
+    height: 38px;
+    margin-bottom: 16px;
+    padding-left: 12px;
+  }
+  .input-book-time {
+    width: 100%;
+    position: relative;
+  }
+  .input-book-img {
+    position: absolute;
+    top: 7px;
+    left: 228px;
+  }
+  .btn-submit-book-info {
+    color: $color-d;
+    background-color: #4bbc56;
   }
 }

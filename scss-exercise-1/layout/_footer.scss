@@ -1,7 +1,7 @@
 .page-footer {
   margin-top: 28px;
   background-color: $bgcolor-primary;
-  color: #ffffff;
+  color: $color-d;
   font: {
     family: $font-secondary;
     size: 12px;
@@ -9,7 +9,6 @@
   text-transform: uppercase;
   &-top {
     border-bottom: 1px solid #81d1f9;
-    box-sizing: border-box;
   }
   .info {
     @include flex-style(flex, true, true, true);
@@ -18,6 +17,7 @@
       bottom: 20px;
     }
     &-name {
+      padding-bottom: 15px;
       font: {
         family: $font-primary-bold;
         size: 18px;
@@ -39,11 +39,11 @@
     }
     &-card-link {
       margin-left: 6px;
-      color: #ffffff;
+      color: $color-d;
     }
     &-card-item-dot::before {
       content: "\2022";
-      color: #ffffff;
+      color: $color-d;
       font-size: large;
     }
   }

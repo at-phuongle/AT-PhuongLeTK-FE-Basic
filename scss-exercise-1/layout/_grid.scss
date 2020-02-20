@@ -1,21 +1,17 @@
 .service {
   @include flex-style(flex, true, true, true);
   width: 100%;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   flex-wrap: wrap;
   -webkit-box-lines: single;
   -moz-box-lines: single;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  margin: {
-    top: -10px;
-    left: 10px;
-  }
   &-wrap {
     display: block;
     overflow: hidden;
     border: 1px solid #ebebeb;
-    box-sizing: border-box;
   }
   &-card {
     padding: {
