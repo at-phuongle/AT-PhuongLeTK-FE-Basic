@@ -1,10 +1,10 @@
-.sticky-product-list {
+.sticky-list {
   position: relative !important;
   display: block;
 }
-.sticky-product-group {
+.sticky-list > .sticky-group {
   display: block;
 }
-.sticky-group-title {
+.sticky-list > .sticky-group > .sticky-group-title {
   position: absolute !important;
 }

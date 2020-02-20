@@ -3,7 +3,7 @@ var stickyHandle = (function () {
     // select an element(*) was declared to use the sticky module
     var $list = document.querySelector(selector);
     // set style for list
-    $list.classList.add('sticky-product-list');
+    $list.classList.add('sticky-list');
     // select all elements LI as child of element(*)
     var $items = $list.querySelectorAll(selector + ' > li');
     var $titles = [];
@@ -11,7 +11,7 @@ var stickyHandle = (function () {
     var lengthItem = $items.length;
     for (var i = 0; i < lengthItem; i++) {
       // set style for item
-      $items[i].classList.add('sticky-product-group');
+      $items[i].classList.add('sticky-group');
       // select title of Li
       var $title = $items[i].querySelector('h1, h2, h3, h4, h5, h6');
       // push title to list of title

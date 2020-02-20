@@ -24,7 +24,7 @@ li {
 .list-title {
   text-align: center;
 }
-.product-list {
+.list {
   margin-top: 50px;
   width: 300px;
   height: 200px;
@@ -33,13 +33,13 @@ li {
   overflow: scroll;
   box-shadow: 0px 0px 3px 2px rgb(202, 199, 199);
 }
-.product-group {
+.group {
   padding: 5px 0;
 }
-.product-card {
+.card {
   margin-top: 40px;
 }
-.product-item {
+.item {
   padding: 10px 5px;
 }
 .group-title {
