@@ -7,28 +7,28 @@ var stickyHandle = (function () {
     // select all elements LI as child of element(*)
     var $items = $list.querySelectorAll(selector + ' > li');
     var $titles = [];
-    // get length of list of item 
+    // get length of list item 
     var lengthItem = $items.length;
     for (var i = 0; i < lengthItem; i++) {
       // set style for item
-      $items[i].classList.add('sticky-group');
+      $items[i].classList.add('sticky-item');
       // select title of Li
       var $title = $items[i].querySelector('h1, h2, h3, h4, h5, h6');
-      // push title to list of title
+      // push title to list of titles
       $titles.push($title);
     }
-    // add event whrn scroll list
+    // add event when scroll list
     $list.addEventListener('scroll', function () {
       // variable to assign the smallest distance from top item to list
       var minHeight = 0;
       // variable to assign the maximum distance from bottom item to list
       var maxHeight = -25;
       var j = 0;
-      // get length of list of tiltle
+      // get length of item tiltle
       var lengthTitle = $titles.length;
       while (j < lengthTitle) {
         // set style for item of list
-        $titles[j].classList.add('sticky-group-title');
+        $titles[j].classList.add('sticky-item-title');
         // set maximum += height of the item j
         maxHeight += $items[j].offsetHeight;
         // compare scroll distance with distance from top and bottom item to list

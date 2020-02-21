@@ -2,9 +2,9 @@
   position: relative !important;
   display: block;
 }
-.sticky-list > .sticky-group {
+.sticky-list > .sticky-item {
   display: block;
 }
-.sticky-list > .sticky-group > .sticky-group-title {
+.sticky-list > .sticky-item > .sticky-item-title {
   position: absolute !important;
 }
