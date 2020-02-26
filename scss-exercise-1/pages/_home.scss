@@ -1,0 +1,22 @@
+.section-banner {
+  @include flex-style(flex, true, true, true);
+  width: 100%;
+  height: 160px;
+  background-image: url(./images/banner.png);
+  color: #0d1d25;
+  .breadcrumb {
+    @include flex-style(flex, true, true, true);
+  }
+  .breadcrumb-link {
+    font: {
+      family: map-get($map: $font, $key: primary);
+      size: map-get($map: $font-size, $key: xs);
+    }
+    text-transform: uppercase;
+  }
+  .breadcrumb-item + .breadcrumb-item:before {
+    content: "\00a0/\00a0";
+    color: black;
+    margin: 0 10px;
+  }
+}

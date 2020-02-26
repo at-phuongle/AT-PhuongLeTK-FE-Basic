@@ -1,0 +1,82 @@
+.nav {
+  font-family: map-get($map: $font, $key: default);
+  border: {
+    top: 1px solid map-get($map: $bd-color, $key: default);
+    bottom: 1px solid map-get($map: $bd-color, $key: default);
+  }
+  &-wrap {
+    @include flex-style(flex, true, true, true);
+    height: 60px;
+  }
+  &-left {
+    @include flex-style(flex, true, true, true);
+  }
+  &-item {
+    padding: 24px 21.5px 20px 21.5px;
+    font-size: map-get($map: $font-size, $key: xs);
+    border-left: 1px solid map-get($map: $bd-color, $key: default);
+  }
+  &-link {
+    color: #8e8e8e;
+    font-size: map-get($map: $font-size, $key: xs);
+    text-transform: uppercase;
+  }
+  &-active {
+    color: map-get($map: $color, $key: primary);
+  }
+  &-item:first-child {
+    padding-left: 26px;
+    border: none;
+  }
+  &-right {
+    @include flex-style(flex, true, true, false);
+    margin-left: auto;
+    .nav-item {
+      margin-left: 10px;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+.header-top-wrap {
+  @include flex-style(flex, true, true, true);
+  padding: {
+    top: 11px;
+    bottom: 12px;
+  }
+  .header-left {
+    @include flex-style(flex, false, false, true);
+    margin-left: 18px;
+    .page-title {
+      padding-bottom: 2.5px;
+      font: {
+        family: map-get($map: $font, $key: secondary);
+        size: map-get($map: $font-size, $key: xl);
+      }
+      text-transform: uppercase;
+    }
+    .page-desc {
+      font: {
+        family: map-get($map: $font, $key:primary);
+        size: map-get($map: $font-size, $key: md);
+      }
+    }
+  }
+  .header-right {
+    @include flex-style(flex, true, true, false);
+    margin-left: auto;
+    .header-top-right-item {
+      margin-left: 9px;
+      font: {
+        family: map-get($map: $font, $key: default);
+        size: 14px;
+        style: italic;
+        weight: bold;
+      }
+    }
+    .phone-number {
+      color: map-get($map: $color, $key: primary);
+      font-size: map-get($map: $font-size, $key: lg);
+    }
+  }
+}

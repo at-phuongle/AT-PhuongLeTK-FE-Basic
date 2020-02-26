@@ -1,0 +1,105 @@
+.service {
+  @include flex-style(flex, true, true, true);
+  width: 100%;
+  padding: 0;
+  font-family: map-get($map: $font, $key: default);
+  flex-wrap: wrap;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  &-wrap {
+    display: block;
+    overflow: hidden;
+    border: 1px solid map-get($map: $bd-color, $key: default);
+  }
+  &-card {
+    padding: {
+      top: 20px;
+      left: 22px;
+      bottom: 22.5px;
+    }
+  }
+  &-name {
+    margin-bottom: 9px;
+    font: {
+      family: map-get($map: $font, $key: default);
+      weight: bold;
+    }
+    text-transform: uppercase;
+    line-height: normal;
+  }
+  &-desc {
+    margin: 0;
+    font: {
+      family: map-get($map: $font, $key: default);
+      size: map-get($map: $font-size, $key: sm);
+    }
+    line-height: 18px;
+  }
+  &-link {
+    @include flex-style(flex, true, true, false);
+    margin-left: auto;
+  }
+}
+.section-main-content {
+  margin-top: 65px;
+  .block {
+    margin-bottom: 42px;
+    background-color: map-get($map: $bg-color, $key: normal);
+    &-title {
+      padding-bottom: 20px;
+      font: {
+        family: map-get($map: $font, $key: primary);
+        size: map-get($map: $font-size, $key: xxl);
+      }
+      text-transform: uppercase;
+    }
+    &-title::after {
+      content: "";
+      display: block;
+      width: 68px;
+      padding-top: 18px;
+      border-bottom: 1px solid map-get($map: $bd-color, $key: primary);
+    }
+    .categorise-title {
+      @include flex-style(flex, true, true, true);
+      text-transform: uppercase;
+      font: {
+        family: map-get($map: $font, $key: primary);
+      }
+      padding-left: 20px;
+      height: 50px;
+    }
+    .categorise-title::after {
+      content: "\2212";
+      margin-left: auto;
+      margin-right: 20px;
+    }
+    .categorise-item-list {
+      padding: 12px 17px 15px 19px;
+      background-color: map-get($map: $bg-color, $key: accent);
+    }
+    .categorise-item-detail {
+      list-style-position: inside;
+      padding: 6px 0;
+      &::before {
+        content: "\2022";
+        margin-right: 4px;
+        color: map-get($map: $color, $key: normal);
+      }
+    }
+    .categorise-item-link {
+      font: {
+        family: map-get($map: $font, $key: primary);
+        size: map-get($map: $font-size, $key: xs);
+      }
+      line-height: normal;
+      text-decoration: none;
+      color: map-get($map: $color, $key: normal);
+    }
+    &-booking {
+      padding: 25px 20px 20px 20px;
+    }
+  }
+}
