@@ -1,8 +1,47 @@
-$color-primary: #4cc1fc;
-$color-c: #e9e9e9;
-$color-d: #ffffff;
-$bgcolor-primary: #62c6f8;
-$color-secondary: #4bbc56;
-$font-primary: "UTM Avo", Arial, Helvetica;
-$font-primary-bold: "UTMAvoBold", Arial, Helvetica;
-$font-secondary: Arial, Helvetica, sans-serif;
+$blue-1: #4cc1fc;
+$blue-2: #62c6f8;
+$blue-3: #81d1f9;
+$blue-4: #d9e4e9;
+$green-1: #4bbc56;
+$green-2: #86ffbf;
+$white-1: #ffffff;
+$white-2: #ebebeb;
+$black-light: #30393f;
+$font-UTM: "UTM Avo", Arial, Helvetica;
+$font-UTMbold: "UTMAvoBold", Arial, Helvetica;
+$font-Arial: Arial, Helvetica, sans-serif;
+$font-12: 12px;
+$font-13: 13px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font: (
+  primary: $font-UTM,
+  secondary: $font-UTMbold,
+  default: $font-Arial
+);
+$font-size: (
+  xs: $font-12,
+  sm: $font-13,
+  md: $font-16,
+  lg: $font-18,
+  xl: $font-20
+);
+$color: (
+  primary: $blue-1,
+  secondary: $white-2,
+  normal: $black-light,
+  accent: $green-2,
+  default: $white-1
+);
+$bg-color: (
+  primary: $blue-2,
+  secondary: $green-1,
+  normal: $blue-4,
+  accent: $white-1
+);
+$bd-color: (
+  primary: $blue-1,
+  secondary: $blue-3,
+  default: $white-2
+);

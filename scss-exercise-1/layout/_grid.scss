@@ -1,44 +1,15 @@
-.service {
-  @include flex-style(flex, true, true, true);
-  width: 100%;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  flex-wrap: wrap;
-  -webkit-box-lines: single;
-  -moz-box-lines: single;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  &-wrap {
-    display: block;
-    overflow: hidden;
-    border: 1px solid #ebebeb;
-  }
-  &-card {
-    padding: {
-      top: 19px;
-      left: 23px;
-      bottom: 22.5px;
-    }
-  }
-  &-name {
-    margin-bottom: 9px;
-    font: {
-      family: $font-secondary;
-      weight: bold;
-      size: 16px;
-    }
-    text-transform: uppercase;
-  }
-  &-desc {
-    margin: 0;
-    font: {
-      family: $font-secondary;
-      size: 13px;
-    }
-    line-height: 18px;
-  }
-  &-link {
-    @include flex-style(flex, true, true, false);
-    margin-left: auto;
-  }
+.row {
+  margin: 0 -10px;
+}
+.col-2 {
+  width: 16.6666666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333333%;
+}
+.col-6 {
+  width: 50%;
 }

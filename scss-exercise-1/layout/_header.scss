@@ -1,8 +1,8 @@
 .nav {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: map-get($map: $font, $key: default);
   border: {
-    top: 1px solid $color-c;
-    bottom: 1px solid $color-c;
+    top: 1px solid map-get($map: $bd-color, $key: default);
+    bottom: 1px solid map-get($map: $bd-color, $key: default);
   }
   &-wrap {
     @include flex-style(flex, true, true, true);
@@ -13,16 +13,16 @@
   }
   &-item {
     padding: 24px 21.5px 20px 21.5px;
-    font-size: 12px;
-    border-left: 1px solid $color-c;
+    font-size: map-get($map: $font-size, $key: xs);
+    border-left: 1px solid map-get($map: $bd-color, $key: default);
   }
   &-link {
     color: #8e8e8e;
-    font-size: 12px;
+    font-size: map-get($map: $font-size, $key: xs);
     text-transform: uppercase;
   }
   &-active {
-    color: $color-primary;
+    color: map-get($map: $color, $key: primary);
   }
   &-item:first-child {
     padding-left: 26px;
@@ -50,15 +50,15 @@
     .page-title {
       padding-bottom: 2.5px;
       font: {
-        family: $font-primary-bold;
-        size: 20px;
+        family: map-get($map: $font, $key: secondary);
+        size: map-get($map: $font-size, $key: xl);
       }
       text-transform: uppercase;
     }
     .page-desc {
       font: {
-        family: $font-primary;
-        size: 16px;
+        family: map-get($map: $font, $key:primary);
+        size: map-get($map: $font-size, $key: md);
       }
     }
   }
@@ -68,15 +68,15 @@
     .header-top-right-item {
       margin-left: 9px;
       font: {
-        family: $font-secondary;
+        family: map-get($map: $font, $key: default);
         size: 14px;
         style: italic;
         weight: bold;
       }
     }
     .phone-number {
-      color: $color-primary;
-      font-size: 18px;
+      color: map-get($map: $color, $key: primary);
+      font-size: map-get($map: $font-size, $key: lg);
     }
   }
 }

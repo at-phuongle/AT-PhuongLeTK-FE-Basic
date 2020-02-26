@@ -1,14 +1,14 @@
 .page-footer {
   margin-top: 28px;
-  background-color: $bgcolor-primary;
-  color: $color-d;
+  background-color: map-get($map: $bg-color, $key: primary);
+  color: map-get($map: $color, $key: default);
   font: {
-    family: $font-secondary;
+    family: map-get($map: $font, $key: default);
     size: 12px;
   }
   text-transform: uppercase;
   &-top {
-    border-bottom: 1px solid #81d1f9;
+    border-bottom: 1px solid map-get($map: $bd-color, $key: secondary);;
   }
   .info {
     @include flex-style(flex, true, true, true);
@@ -19,15 +19,14 @@
     &-name {
       padding-bottom: 15px;
       font: {
-        family: $font-primary-bold;
+        family: map-get($map: $font, $key: secondary);
         size: 18px;
-        weight: 500;
       }
     }
     &-card-list {
       margin-top: 14px;
       font: {
-        family: $font-secondary;
+        family: map-get($map: $font, $key: default);
         size: 14px;
       }
       list-style-position: inside;
@@ -39,20 +38,20 @@
     }
     &-card-link {
       margin-left: 6px;
-      color: $color-d;
+      color: map-get($map: $color, $key: default);
     }
     &-card-item-dot::before {
       content: "\2022";
-      color: $color-d;
+      color: map-get($map: $color, $key: default);
       font-size: large;
     }
   }
   .page-footer-bottom {
     padding: {
-      top: 25px;
-      bottom: 25px;
+      top: 22px;
+      bottom: 22px;
     }
-    font-family: $font-secondary;
+    font-family: map-get($map: $font, $key: default);
     .footer-bottom-wrap {
       @include flex-style(flex, true, true, true);
     }
@@ -64,7 +63,7 @@
       &::after {
         content: "dd.com";
         margin-left: 5px;
-        color: #86ffbf;
+        color: map-get($map: $color, $key: accent);
       }
     }
   }

@@ -2,7 +2,7 @@ form {
   @include flex-style(flex, true, false, true);
   input[type="text"] {
     width: 100%;
-    font-family: $font-secondary;
+    font-family: map-get($map: $font, $key: default);
     height: 38px;
     margin-bottom: 16px;
     padding-left: 12px;
@@ -15,9 +15,5 @@ form {
     position: absolute;
     top: 7px;
     left: 228px;
-  }
-  .btn-submit-book-info {
-    color: $color-d;
-    background-color: #4bbc56;
   }
 }

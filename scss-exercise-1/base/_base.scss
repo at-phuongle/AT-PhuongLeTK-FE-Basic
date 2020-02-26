@@ -1,15 +1,15 @@
 * {
   box-sizing: border-box;
 }
-.row {
-  margin: 0 -10px;
-}
-.col-4 {
-  width: 33.3333333%;
-}
 [class^="col-"] {
   padding: 10px 10px;
 }
 a {
   color: #000000;
+}
+h4 {
+  font-size: map-get($map: $font-size, $key: md);
+}
+h5 {
+  font-size: map-get($map: $font-size, $key: xs);
 }

@@ -1,8 +1,11 @@
-button {
+.btn-submit-book-info {
   width: 125.5px;
   height: 46px;
   font: {
     family: "UTM Avo";
-    weight: 900;
+    weight: bolder;
   }
+  font-size: map-get($map: $font-size, $key: xs);
+  color: map-get($map: $color, $key: default);
+  background-color: map-get($map: $bg-color, $key: secondary);
 }
