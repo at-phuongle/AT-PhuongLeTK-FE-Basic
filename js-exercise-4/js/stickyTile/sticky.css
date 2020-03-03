@@ -1,0 +1,10 @@
+.sticky-list {
+  position: relative !important;
+  display: block;
+}
+.sticky-list > .sticky-item {
+  display: block;
+}
+.sticky-list > .sticky-item > .sticky-item-title {
+  position: absolute !important;
+}
