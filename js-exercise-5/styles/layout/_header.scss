@@ -1,0 +1,105 @@
+.nav {
+  font-family: map-get($map: $font, $key: default);
+  background-color: map-get($map: $bg-color, $key: primary);
+  border: {
+    top: 1px solid map-get($map: $bd-color, $key: primary);
+    bottom: 1px solid map-get($map: $bd-color, $key: primary);
+  }
+  &-wrap {
+    @include flex-style(flex, true, true);
+    height: 60px;
+  }
+  &-left {
+    @include flex-style(flex, true, true);
+  }
+  &-item {
+    padding: 24px 21.5px 20px 21.5px;
+    font-size: map-get($map: $font-size, $key: xs);
+    border-left: 1px solid map-get($map: $bd-color, $key: primary);
+    &:hover a {
+      color: map-get($map: $color, $key: primary);
+    }
+  }
+  &-link {
+    font-size: map-get($map: $font-size, $key: xs);
+    text-transform: uppercase;
+  }
+  &-active {
+    color: map-get($map: $color, $key: primary);
+  }
+  &-item:first-child {
+    padding-left: 26px;
+    border: none;
+  }
+  &-right {
+    @include flex-style(flex, true, true);
+    justify-content: flex-end;
+    margin-left: auto;
+    .nav-item {
+      margin-left: 10px;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+.fa-shopping-cart {
+  color: map-get($map: $color, $key: primary);
+}
+.header-top-wrap {
+  @include flex-style(flex, true, true);
+  justify-content: space-between;
+  font-family: map-get($map: $font, $key: default);
+  padding: {
+    top: 11px;
+    bottom: 12px;
+  }
+  .header-top-item {
+    @include flex-style(flex, true, true);
+    .page-title {
+      @include flex-style(flex, true, false);
+      &-text {
+        padding-bottom: 2.5px;
+        font: {
+          family: map-get($map: $font, $key: secondary);
+          size: map-get($map: $font-size, $key: xl);
+        }
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+    .page-des {
+      font: {
+        size: map-get($map: $font-size, $key: lg);
+        style: italic;
+      }
+      letter-spacing: 2px;
+    }
+    .fab,
+    .fa {
+      font-size: large;
+    }
+    .page-link {
+      margin-right: 10px;
+    }
+    .account span:first-child::after {
+      content: "";
+      display: inline-block;
+      height: 15px;
+      margin: 0 5px;
+      border-left: 2px solid map-get($map: $color, $key: default);
+    }
+    .account span:active a,
+    .account span:hover a {
+      color: map-get($map: $color, $key: primary);
+    }
+    .cart {
+      position: relative;
+      margin-left: 10px;
+      &-number {
+        position: absolute;
+        transform: translateY(-50%);
+        color: map-get($map: $color, $key: accent);
+      }
+    }
+  }
+}

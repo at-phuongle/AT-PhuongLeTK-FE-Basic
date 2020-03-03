@@ -1,0 +1,13 @@
+%clr {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+%element-hover {
+  background-color: map-get($map: $bg-color, $key: secondary);
+}
+%element-active {
+  background-color: map-get($map: $bg-color, $key: secondary);
+}
