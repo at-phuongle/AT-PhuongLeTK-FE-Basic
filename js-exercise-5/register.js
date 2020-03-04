@@ -19,11 +19,11 @@ var $warning = [];
 // get array input code
 var arrInpCode = $arrStep[2].getElementsByClassName('inp-code');
 for (var k = 0; k < arrInpCode.length; k++) {
-  arrInpCode[k].addEventListener('input',changFocusCode);
+  arrInpCode[k].addEventListener('input', changFocusCode);
 }
 // change focus input code
 function changFocusCode() {
-  for (var k = 0; k < arrInpCode.length-1; k++) {
+  for (var k = 0; k < arrInpCode.length - 1; k++) {
     if (arrInpCode[k].value.length === 1) {
       arrInpCode[k + 1].focus();
     }
@@ -168,11 +168,17 @@ function checkCode() {
 
 // show point step
 function showPointStep(n) {
-  var i, x = document.getElementsByClassName("point-step");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.background = '#ebebeb';
+  var i, $arrPoint = document.getElementsByClassName("point-step");
+  var $arLine = document.getElementsByClassName('line');
+  for (i = 0; i < $arrPoint.length; i++) {
+    if (i <= n) {
+      $arrPoint[i].style.borderColor = '#59a53b';
+      $arLine[i].style.visibility = 'visible';
+    } else {
+      $arrPoint[i].style.borderColor = '#d8d8d8';
+      $arLine[i].style.visibility = 'hidden';
+    }
   }
-  x[n].style.background = '#4fa52e';
 }
 
 // remove warning after 3s

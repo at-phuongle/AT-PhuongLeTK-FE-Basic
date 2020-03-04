@@ -158,17 +158,27 @@ label {
 .span-change {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 .span-change .point-step {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 30px;
-  text-align: center;
   width: 30px;
   height: 30px;
-  margin-left: 20px;
   background-color: #d8d8d8;
+  border: 3px solid #d8d8d8;
   border-radius: 50%;
+}
+.span-change .line {
+  width: 35px;
+  height: 3px;
+  background-color: #59a53b;
+}
+.span-change .line:first-child {
+  display: none;
 }
 
 .row .warning {
