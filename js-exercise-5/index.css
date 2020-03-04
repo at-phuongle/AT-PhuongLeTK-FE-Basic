@@ -141,8 +141,81 @@ label {
 
 .step {
   display: none;
+  animation-name: fade;
+  animation-duration: 1.3s;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.step-thank h2 {
+  cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.step-thank h2 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.step-thank h2 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+.step-thank h2 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.step-thank h2 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+.step-thank h2 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+.step-thank h2 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+.step-thank h2 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+.step-thank h2 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.step-thank h2 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
 .form-title-text,
 .form-title-des {
   font-weight: bold;
@@ -588,7 +661,7 @@ input[type=number]:focus {
 }
 
 .section-login {
-  background-image: linear-gradient(to right, #a7aef2, #69c2de, #00e4aa);
+  background-image: linear-gradient(to bottom, #a7aef2, #69c2de, #00e4aa);
   font-family: Arial, Helvetica, sans-serif;
   padding: 150px 100px;
 }
@@ -601,7 +674,6 @@ input[type=number]:focus {
 .form-wrap {
   padding: 30px;
   border-radius: 8px;
-  opacity: 2;
   position: relative;
   background-image: linear-gradient(#aa8134, #d8da60), linear-gradient(#aa8134, #d8da60), linear-gradient(#aa8134, #d8da60), linear-gradient(#aa8134, #d8da60);
   background-position: 0 0, 0 0, 0 100%, 0 100%;

@@ -1,5 +1,5 @@
 .section-login {
-  background-image: linear-gradient(to right, #a7aef2, #69c2de, #00e4aa);
+  background-image: linear-gradient(to bottom, #a7aef2, #69c2de, #00e4aa);
   font-family: map-get($map: $font, $key: default);
   padding: 150px 100px;
 }
@@ -10,8 +10,6 @@
 .form-wrap {
   padding: 30px;
   border-radius: 8px;
-  opacity: 2;
-
   position:relative;
   background-image: 
   linear-gradient(map-get($map: $color, $key: primary), #d8da60), 
