@@ -182,7 +182,7 @@ label {
   border-radius: 20px;
 }
 .form-item .fa-user,
-.form-item .fa-phone-alt,
+.form-item .fa-phone,
 .form-item .fa-barcode {
   position: absolute;
   left: 20px;

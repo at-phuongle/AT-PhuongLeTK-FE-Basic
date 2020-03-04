@@ -80,7 +80,6 @@ showStep(currentStep);
 
 // click next
 function nextStep() {
-
   if (checkValidForm()) {
     switch (currentStep) {
       case 0:
@@ -133,7 +132,7 @@ function checkValidForm() {
     if (!($arrInp[i].value)) {
       check = false;
       $warning[i].style.display = 'block';
-      removeWarning('warning');
+      removeWarning();
     }
   }
   return check;
@@ -147,7 +146,7 @@ function checkNumber() {
       checkNum = false;
       $warning[j].innerHTML = 'Please input number!';
       $warning[j].style.display = 'block';
-      removeWarning('warning');
+      removeWarning();
     }
   }
   return checkNum;
@@ -177,13 +176,11 @@ function showPointStep(n) {
 }
 
 // remove warning after 3s
-var elems = document.getElementsByClassName('warning');
-removeWarning();
 function removeWarning() {
   setTimeout(
     function () {
-      for (var i = 0; i < elems.length; i += 1) {
-        elems[i].style.display = 'none';
+      for (var i = 0; i < $warning.length; i += 1) {
+        $warning[i].style.display = 'none';
       }
     }, 2000);
 }
