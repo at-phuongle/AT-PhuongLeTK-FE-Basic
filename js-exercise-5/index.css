@@ -664,7 +664,7 @@ input[type=number]:focus {
   color: #aa8134;
 }
 
-.section-login {
+.section-register {
   background-image: linear-gradient(to bottom, #a7aef2, #69c2de, #00e4aa);
   font-family: Arial, Helvetica, sans-serif;
   padding: 150px 100px;
