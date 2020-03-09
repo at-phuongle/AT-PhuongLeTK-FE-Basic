@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <section class="header-top">
+      <div class="container">
+        <div class="header-top-wrap">
+          <div class="header-top-item">
+            <a class="page-link" href=""><i class="fa fa-facebook-f"></i></a>
+            <a class="page-link" href=""><i class="fa fa-google"></i></a>
+            <a class="page-link" href=""><i class="fa fa-youtube"></i></a>
+          </div>
+          <div class="header-top-item">
+            <div class="page-title">
+              <a href="#">
+                <img src="./images/logo.png" alt="">
+              </a>
+              <span class="page-title-text"><a href="#">Perfume</a></span>
+            </div>
+            <span class="page-des">Your perfume is your message</span>
+          </div>
+          <div class="header-top-item">
+            <div class="account">
+              <span><a href="#">Login</a></span>
+              <span class="link-active"><a href="./register.html">Register</a></span>
+            </div>
+            <div class="cart">
+              <a href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
+              <span class="cart-number" id="js-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-wrap">
+          <ul class="nav-left">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Blog Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <form class="form-search">
+              <input class="txt-search" id="js-inp-search" type="text" placeholder="Input product">
+              <i class="fa fa-search"></i>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="section-register">
+      <div class="container">
+        <div class="layout-2-col">
+          <div class="col-left">
+            <span class="title">Register</span>
+            <span class="des">Sign up to get our perfume</span>
+          </div>
+          <div class="col-main form-wrap">
+            <form class="form-content">
+              <div class="span-change">
+                <span class="line"></span>
+                <span class="point-step">1</span>
+                <span class="line"></span>
+                <span class="point-step">2</span>
+                <span class="line"></span>
+                <span class="point-step">3</span>
+                <span class="line"></span>
+                <span class="point-step">4</span>
+                <span class="line"></span>
+                <span class="point-step">5</span>
+              </div>
+              <div class="step">
+                <h3 class="form-title-text">Input your info</h3>
+                <div class="row">
+                  <div class="form-item col-6">
+                    <input class="inp" id="js-firstname" name="firstName" type="text" placeholder="First name">
+                    <i class="fa fa-user"></i>
+                    <div class="warning">Firstname is required!</div>
+                  </div>
+                  <div class="form-item col-6">
+                    <input class="inp" id="js-lastname" name="lastName" type="text" placeholder="Last name">
+                    <i class="fa fa-user"></i>
+                    <div class="warning">Lastname is required!</div>
+                  </div>
+                </div>
+                <div class="form-item">
+                  <input class="inp" id="js-email" name="email" type="text" placeholder="Email">
+                  <i class="fa fa-envelope"></i>
+                  <div class="warning">Email is required!</div>
+                </div>
+                <div class="form-item">
+                  <input class="inp" id="js-password" name="passWord" type="password" placeholder="Password">
+                  <i class="fa fa-lock"></i>
+                  <div class="warning">Password is required!</div>
+                </div>
+                <div class="form-item">
+                  <input class="inp" id="js-confirmpass" name="confirmPass" type="password"
+                    placeholder="Confim password">
+                  <i class="fa fa-lock"></i>
+                  <div class="warning" id="js-warning-confim">Confim password is required!</div>
+                </div>
+              </div>
+              <div class="step">
+                <h3 class="form-title-text">Your phone number</h3>
+                <h4 class="form-title-des">Please input 10 number</h4>
+                <div class="row">
+                  <div class="form-item col-4">
+                    <input class="inp inp-number" maxlength="4" name="phoneNumber" type="text"
+                      placeholder="Four number">
+                    <i class="fa fa-phone"></i>
+                    <div class="warning">Phone number is required!</div>
+                  </div>
+                  <div class="form-item col-4">
+                    <input class="inp inp-number" maxlength="3" name="phoneNumber" type="text"
+                      placeholder="Three number">
+                      <i class="fa fa-phone"></i>
+                    <div class="warning">Phone number is required!</div>
+                  </div>
+                  <div class="form-item col-4">
+                    <input class="inp inp-number" maxlength="3" name="phoneNumber" type="text"
+                      placeholder="Three number">
+                      <i class="fa fa-phone"></i>
+                    <div class="warning">Phone number is required!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <h3 class="form-title-text">SMS code</h3>
+                <div class="row">
+                  <div class="form-item col-3">
+                    <input class="inp inp-code" maxlength="1" name="code" type="text">
+                    <i class="fa fa-barcode"></i>
+                    <div class="warning">SMS is required!</div>
+                  </div>
+                  <div class="form-item col-3">
+                    <input class="inp inp-code" maxlength="1" name="code" type="text">
+                    <i class="fa fa-barcode"></i>
+                    <div class="warning">SMS code is required!</div>
+                  </div>
+                  <div class="form-item col-3">
+                    <input class="inp inp-code" maxlength="1" name="code" type="text">
+                    <i class="fa fa-barcode"></i>
+                    <div class="warning">SMS code is required!</div>
+                  </div>
+                  <div class="form-item col-3">
+                    <input class="inp inp-code" maxlength="1" name="code" type="text">
+                    <i class="fa fa-barcode"></i>
+                    <div class="warning">SMS code is required!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <h3 class="form-title-text">Check your info</h3>
+                <div class="form-show">
+                  <div class="form-item">
+                    <label class="form-label">Name:</label>
+                    <span class="form-info info-name"></span>
+                  </div>
+                  <div class="form-item">
+                    <label class="form-label">Email:</label>
+                    <span class="form-info"></span>
+                  </div>
+                  <div class="form-item">
+                    <label class="form-label">Password:</label>
+                    <span class="form-info"></span>
+                  </div>
+                  <div class="form-item">
+                    <label class="form-label">Phone number:</label>
+                    <span class="form-info"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="step step-thank">
+                <div class="fireworks"></div>
+                <p class="icon-successs"><i class="fa fa-check-circle"></i></p>
+                <h2 class="form-title-text">
+                  <span class="text-thank">t</span>
+                  <span class="text-thank">h</span>
+                  <span class="text-thank">a</span>
+                  <span class="text-thank">n</span>
+                  <span class="text-thank">k</span>
+                  <span class="text-thank"></span>
+                  <span class="text-thank">y</span>
+                  <span class="text-thank">o</span>
+                  <span class="text-thank">u</span>
+                </h2>
+                <h4 class="form-title-des">You have been successfully registered.</h4>
+              </div>
+            </form>
+            <div class="form-btn">
+              <button class="col-3 btn btn-back" id="js-back">Back</button>
+              <button class="col-3 btn btn-next" id="js-next">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer-top">
+      <div class="container">
+        <ul class="row info">
+          <li class="col-3 info-item">
+            <h4 class="info-title">Information</h4>
+            <ul class="info-card">
+              <li class="info-card-item"><a href="" class="info-card-link">About Us</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Delivery Information</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Privacy Pocity</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Terms & Conditions</a></li>
+            </ul>
+          </li>
+          <li class="col-3 info-item">
+            <h4 class="info-title">Customer service</h4>
+            <ul class="info-card">
+              <li class="info-card-item"><a href="" class="info-card-link">Contact Us</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Returns</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Site map</a>
+              </li>
+            </ul>
+          </li>
+          <li class="col-3 info-item">
+            <h4 class="info-title">Extra</h4>
+            <ul class="info-card">
+              <li class="info-card-item"><a href="" class="info-card-link">Brands</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Gift Vouchers</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Affiliates</a></li>
+              <li class="info-card-item"><a href="" class="info-card-link">Specials</a></li>
+            </ul>
+          </li>
+          <li class="col-3 info-item info-item-folow">
+            <h4 class="info-title">Folow us</h4>
+            <ul class="info-card">
+              <li class="info-card-item"><i class="fa fa-facebook-f"></i><a href="" class="info-card-link">Facebook</a>
+              </li>
+              <li class="info-card-item"><i class="fa fa-google"></i><a href="" class="info-card-link">Google</a></li>
+              <li class="info-card-item"><i class="fa fa-youtube"></i><a href="" class="info-card-link">Youtube</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-wrap">
+          <span class="footer-bottom-left"> 2018 - Copyright of Specialized Clinic</span>
+          <span class="footer-bottom-right">Design by</span>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="./register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+.page-footer {
+  background-color: map-get($map: $bg-color, $key: primary);
+  font: {
+    family: map-get($map: $font, $key: default);
+    size: map-get($map: $font-size, $key: xs);
+  }
+  &-top {
+    border-bottom: 1px solid map-get($map: $bd-color, $key: primary);
+  }
+  .info {
+    padding: {
+      top: 30px;
+      bottom: 20px;
+    }
+    &-title {
+      padding-bottom: 15px;
+      font: {
+        family: map-get($map: $font, $key: secondary);
+        size: map-get($map: $font-size, $key: lg);
+      }
+      text-transform: uppercase;
+    }
+    &-card-item {
+      @include flex-style(flex, true, true);
+      align-items: center;
+      padding: 4.2px 0;
+      &::before {
+        content: "\2022";
+        font-size: large;
+      }
+    }
+    &-card-link {
+      margin-left: 6px;
+    }
+    &-item-folow {
+      .info-card-item::before {
+        content: "";
+      }
+    }
+  }
+  .page-footer-bottom {
+    padding: {
+      top: 22px;
+      bottom: 22px;
+    }
+    font-family: map-get($map: $font, $key: default);
+    .footer-bottom-wrap {
+      @include flex-style(flex, true, true);
+    }
+    .footer-bottom-left::before {
+      content: "\0040";
+    }
+    .footer-bottom-right {
+      margin-left: auto;
+      &::after {
+        content: "dd.com";
+        margin-left: 5px;
+        color: map-get($map: $color, $key: primary);
+      }
+    }
+  }
+}
+.fa-facebook-f {
+  color: #34507f;
+}
+.fa-google {
+  color: #b91f29;
+}
+.fa-youtube {
+  color: #b10128;
+}

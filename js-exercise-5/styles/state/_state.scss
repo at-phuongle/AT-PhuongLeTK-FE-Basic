@@ -1,0 +1,3 @@
+.link-active a{
+  color: map-get($map: $color, $key: primary);
+}

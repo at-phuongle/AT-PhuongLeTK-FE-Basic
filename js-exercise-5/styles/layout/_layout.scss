@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.layout-2-col {
+  display: flex;
+  height: 525px;
+  .col-left {
+    background-image: url(./images/bgPhone.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    margin-right: 50px;
+  }
+  .col-main {
+    width: 70%;
+  }
+}

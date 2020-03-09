@@ -1,0 +1,41 @@
+$brown-1: #dec58c;
+$brown-2: #f3eea9;
+$brown-3: #aa8134;
+$brown-4: #e6b87d;
+$white-1: #ffffff;
+$white-2: #d8d8d8;
+$blue: #0145ff;
+$black-light: #30393f;
+$font-UTM: "UTM Avo", Arial, Helvetica;
+$font-UTMbold: "UTMAvoBold", Arial, Helvetica;
+$font-Arial: Arial, Helvetica, sans-serif;
+$font-13: 13px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font: (
+  primary: $font-UTM,
+  secondary: $font-UTMbold,
+  default: $font-Arial
+);
+$font-size: (
+  xs: $font-13,
+  md: $font-16,
+  lg: $font-18,
+  xl: $font-20
+);
+$color: (
+  primary: $brown-3,
+  default: $black-light,
+  normal: $white-2,
+  accent: $blue
+);
+$bg-color: (
+  primary: $brown-1,
+  secondary: $brown-4,
+  default: $white-2
+);
+$bd-color: (
+  primary: $brown-2,
+  default: $white-2
+);
